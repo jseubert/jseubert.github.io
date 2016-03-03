@@ -1,0 +1,537 @@
+---
+title: Jun
+name: John Seubert
+number: #11
+position: iOS Developer
+height: 6' 2"
+weight: 185
+age: 26
+linkedin: "https://www.linkedin.com/in/jaseubert"
+---
+
+<head>
+<title>
+<%= current_page.data.title %>
+</title>
+
+<div class="menu-container">
+</div>
+<div id="main">
+  <header id="player-header" class="">
+    <div class="container">
+      <img alt="John Seubert" class="player-headshot" src="http://i.imgur.com/Kp3cUjn.jpg" data-src="http://i.imgur.com/Kp3cUjn.jpg" >
+
+      <div class="player-vitals">
+        <h1>
+          <span class="player-name"><%= current_page.data.name %></span>
+          <span class="player-number"<%= current_page.data.name %></span>
+        </h1>
+        <ul>
+          <li><%= current_page.data.position %></li>
+          <li>B/T: R/R</li>
+          <li><%= current_page.data.height %>/<%= current_page.data.weight %></li>
+          <li>Age: <%= current_page.data.age %></li>
+        </ul>
+      </div>
+      <img class="mlbpa-logo" src="//mlb.mlb.com/images/stats/mlb4cg.png">
+    </div>
+
+    <nav id="player-nav">
+      <div class="container">
+        <div class="player-vitals-mini">
+          <img src="/shared/images/logos/32x32_cap/136.png" srcset="http://m.mlb.com/shared/images/logos/32x32_cap/136@2x.png 2x, http://m.mlb.com/shared/images/logos/32x32_cap/136@3x.png 3x">
+          <div class="player-vitals-mini-name"><%= current_page.data.name %></div>
+          <span class="player-vitals-mini-number"><%= current_page.data.number %></span>
+          <span><%= current_page.data.position %></span>
+        </div>
+        <div class="player-nav-items" style="border-color:#0C2C56;color:#0C2C56">
+          <a id="summary-nav-item" href="#summary" class="active">Summary</a>
+          <a id="stats-nav-item" href="#stats" class="">Stats</a>
+          <a id="news-nav-item" href="#news">Fantasy</a>
+          <a id="awards-nav-item" href="#awards">Awards</a>
+          <a id="shop-nav-item" class="shop-link" href="//shop.mlb.com/">Shop</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <section id="summary">
+    <div class="container">
+      <section id="quick-stats">
+        <div class="player-stats-summary-small">
+          <h3 class="label-table">Robinson Cano 2016 Spring Training Stats</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>AVG</th>
+                <th>HR</th>
+                <th>RBI</th>
+                <th>SB</th>
+                <th>OPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="label-table">Robinson Cano Spring Training Career Stats</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>AVG</th>
+                <th>HR</th>
+                <th>RBI</th>
+                <th>SB</th>
+                <th>OPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.345</td>
+                <td>18</td>
+                <td>110</td>
+                <td>5</td>
+                <td>.894</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="label-table">Robinson Cano Stats</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>AVG</th>
+                <th>HR</th>
+                <th>RBI</th>
+                <th>SB</th>
+                <th>OPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.287</td>
+                <td>21</td>
+                <td>79</td>
+                <td>2</td>
+                <td>.779</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="label-table">Robinson Cano MLB Career Stats</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>AVG</th>
+                <th>HR</th>
+                <th>RBI</th>
+                <th>SB</th>
+                <th>OPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.307</td>
+                <td>239</td>
+                <td>983</td>
+                <td>50</td>
+                <td>.850</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="player-bio">
+          <h3>Robinson Cano Bio</h3>
+          <ul>
+            <li class="full-name"><span class="label">Full Name:</span> Robinson Jose Cano</li>
+            <li><span class="label">Pronunciation:</span> kah-NOH</li>
+            <li><span class="label">Born:</span> 10/22/1982 in San Pedro de Macoris, Dominican Republic</li>
+            <li><span class="label">High School:</span> San Pedro Apostol, San Pedro de Macoris, DR</li>
+            <li><span class="label">Debut:</span> May 3, 2005</li>
+            <li><span class="label">Relationship(s):</span>son of <a href="/player/111961/jose-cano">Jose Cano</a></li>
+          </ul>
+          <ul class="twitter-buttons">
+            <li>
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=RobinsonCano&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941703" style="position: static; visibility: visible; width: 152px; height: 20px;" data-screen-name="RobinsonCano"></iframe>
+            </li>
+            <li>
+              <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=Mariners&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941705" style="position: static; visibility: visible; width: 121px; height: 20px;" data-screen-name="Mariners"></iframe>
+            </li>
+          </ul>
+          <a href="<%= current_page.data.linkedin %>" class="view-toggle">View More Bio Info +</a>
+  </div>
+  <div class="player-stats-summary-large">
+  <table>
+  <thead>
+  <tr>
+  <th>Year</th>
+  <th>AB</th>
+  <th>R</th>
+  <th>H</th>
+  <th>HR</th>
+  <th>RBI</th>
+  <th>SB</th>
+  <th>AVG</th>
+  <th>OBP</th>
+  <th>OPS</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>2016 Spring Training Stats</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  </tr>
+  <tr>
+  <td>Spring Training Career Stats</td>
+  <td>589</td>
+  <td>83</td>
+  <td>203</td>
+  <td>18</td>
+  <td>110</td>
+  <td>5</td>
+  <td>.345</td>
+  <td>.369</td>
+  <td>.894</td>
+  </tr>
+  <tr>
+  <td>2015 Stats</td>
+  <td>624</td>
+  <td>82</td>
+  <td>179</td>
+  <td>21</td>
+  <td>79</td>
+  <td>2</td>
+  <td>.287</td>
+  <td>.334</td>
+  <td>.779</td>
+  </tr>
+  <tr>
+  <td>MLB Career Stats</td>
+  <td>6555</td>
+  <td>958</td>
+  <td>2015</td>
+  <td>239</td>
+  <td>983</td>
+  <td>50</td>
+  <td>.307</td>
+  <td>.356</td>
+  <td>.850</td>
+  </tr>
+  </tbody>
+  </table>
+  <ul class="status horizontal-list">
+  <li>
+  <span class="label">Status: </span>Active
+  </li>
+  <li>
+  <span class="label">Next SEA Game: </span>
+  <a href="http://mlb.mlb.com/schedule/index.jsp?c_id=sea">
+  3/2
+  vs SD
+  </a>
+  </li>
+  </ul>
+  </div>
+  <div class="ad-responsive-slot">
+  <div id="ad-summary-small-1" class="ad-responsive-size" data-thresholds="[0,1]" data-sizes="[[320,50]]" data-targeting="{&quot;slot&quot;:&quot;ad-summary-small&quot;,&quot;pos&quot;:&quot;1&quot;,&quot;club&quot;:&quot;sea&quot;}" style="display: block;">
+  <div id="google_ads_iframe_/2605/mlb.mlb/player_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2605/mlb.mlb/player_0" title="3rd party ad content" name="google_ads_iframe_/2605/mlb.mlb/player_0" width="320" height="50" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/2605/mlb.mlb/player_0__hidden__" title="" name="google_ads_iframe_/2605/mlb.mlb/player_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+  <div id="ad-summary-large-1" class="ad-responsive-size" data-thresholds="[2,3]" data-sizes="[[970,90],[970,66],[728,90]]" data-targeting="{&quot;slot&quot;:&quot;ad-summary-large&quot;,&quot;pos&quot;:&quot;1&quot;,&quot;club&quot;:&quot;sea&quot;}" style="display: none;">
+  <div id="google_ads_iframe_/2605/mlb.mlb/player_4__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2605/mlb.mlb/player_4" title="3rd party ad content" name="google_ads_iframe_/2605/mlb.mlb/player_4" width="970" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/2605/mlb.mlb/player_4__hidden__" title="" name="google_ads_iframe_/2605/mlb.mlb/player_4__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+  </div>
+  </section>
+  </div>
+  </section>
+  <section id="summary">
+<div class="container">
+<h2 class="hidden"><span>Summary</span></h2>
+<section id="live-game" data-bind="css: {live: isLive}">
+<h3>Live <span data-bind="text: gameHeading"></span></h3>
+<div id="live-game-stats">
+<table>
+<tbody><tr>
+<th class="large-view">Game</th>
+<th>AB</th>
+<th>R</th>
+<th>H</th>
+<th>RBI</th>
+<th>HR</th>
+<th class="large-view">BB</th>
+<th class="large-view">HBP</th>
+<th class="large-view">SO</th>
+<th class="large-view">SB</th>
+<th class="large-view">CS</th>
+<th class="large-view">ERR</th>
+</tr>
+<tr>
+<td class="large-view"><a data-bind="attr:{href:gamedayLink}"><span data-bind="text: gameTitle"></span></a></td>
+<td data-bind="highlightedChange:gameAB">-</td>
+<td data-bind="highlightedChange:gameR">-</td>
+<td data-bind="highlightedChange:gameH">-</td>
+<td data-bind="highlightedChange:gameRBI">-</td>
+<td data-bind="highlightedChange:gameHR">-</td>
+<td class="large-view" data-bind="highlightedChange:gameBB">-</td>
+<td class="large-view" data-bind="highlightedChange:gameHBP">-</td>
+<td class="large-view" data-bind="highlightedChange:gameSO">-</td>
+<td class="large-view" data-bind="highlightedChange:gameSB">-</td>
+<td class="large-view" data-bind="highlightedChange:gameCS">-</td>
+<td class="large-view" data-bind="highlightedChange:gameERR">-</td>
+</tr>
+</tbody></table>
+<div id="live-game-summary" data-bind="visible: atBatResults">
+<span class="label"><span data-bind="text: gameH"></span> for <span data-bind="text: gameAB"></span>:</span> <span data-bind="text: atBatResults"></span>
+</div>
+</div>
+<h3 id="vs-opponent-heading">vs <span data-bind="text: vsOpponentLastName"></span></h3>
+<div id="vs-opponent-stats">
+<table>
+<tbody><tr>
+<th class="large-view">vs <span data-bind="text: vsOpponentLastName"></span></th>
+<th>AB</th>
+<th>R</th>
+<th>H</th>
+<th>RBI</th>
+<th>HR</th>
+<th class="large-view">BB</th>
+<th class="large-view">SO</th>
+<th class="large-view">SB</th>
+<th class="large-view">CS</th>
+<th class="large-view">AVG</th>
+<th class="large-view">OPS</th>
+</tr>
+<tr>
+<td class="large-view">Last 5 Years</td>
+<td data-bind="highlightedChange:vsAB">-</td>
+<td data-bind="highlightedChange:vsR">-</td>
+<td data-bind="highlightedChange:vsH">-</td>
+<td data-bind="highlightedChange:vsRBI">-</td>
+<td data-bind="highlightedChange:vsHR">-</td>
+<td class="large-view" data-bind="highlightedChange:vsBB">-</td>
+<td class="large-view" data-bind="highlightedChange:vsSO">-</td>
+<td class="large-view" data-bind="highlightedChange:vsSB">-</td>
+<td class="large-view" data-bind="highlightedChange:vsCS">-</td>
+<td class="large-view" data-bind="highlightedChange:vsAVG">-</td>
+<td class="large-view" data-bind="highlightedChange:vsOPS">-</td>
+</tr>
+</tbody></table>
+</div>
+</section>
+<section id="quick-stats">
+<div class="player-stats-summary-small">
+<h3 class="label-table">Robinson Cano 2016 Spring Training Stats</h3>
+<table>
+<thead>
+<tr>
+<th>AVG</th>
+<th>HR</th>
+<th>RBI</th>
+<th>SB</th>
+<th>OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 class="label-table">Robinson Cano Spring Training Career Stats</h3>
+<table>
+<thead>
+<tr>
+<th>AVG</th>
+<th>HR</th>
+<th>RBI</th>
+<th>SB</th>
+<th>OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.345</td>
+<td>18</td>
+<td>110</td>
+<td>5</td>
+<td>.894</td>
+</tr>
+</tbody>
+</table>
+<h3 class="label-table">Robinson Cano Stats</h3>
+<table>
+<thead>
+<tr>
+<th>AVG</th>
+<th>HR</th>
+<th>RBI</th>
+<th>SB</th>
+<th>OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.287</td>
+<td>21</td>
+<td>79</td>
+<td>2</td>
+<td>.779</td>
+</tr>
+</tbody>
+</table>
+<h3 class="label-table">Robinson Cano MLB Career Stats</h3>
+<table>
+<thead>
+<tr>
+<th>AVG</th>
+<th>HR</th>
+<th>RBI</th>
+<th>SB</th>
+<th>OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.307</td>
+<td>239</td>
+<td>983</td>
+<td>50</td>
+<td>.850</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="player-bio">
+<h3>Robinson Cano Bio</h3>
+<ul>
+<li class="full-name"><span class="label">Full Name:</span> Robinson
+Jose Cano
+</li>
+<li><span class="label">Pronunciation:</span> kah-NOH</li>
+<li><span class="label">Born:</span> 10/22/1982
+in San Pedro de Macoris, Dominican Republic
+</li>
+<li><span class="label">High School:</span> San Pedro Apostol, San Pedro de Macoris, DR</li>
+<li><span class="label">Debut:</span> May 3, 2005</li>
+<li><span class="label">Relationship(s):</span>
+son of <a href="/player/111961/jose-cano">Jose Cano</a>
+</li>
+</ul>
+<ul class="twitter-buttons">
+<li>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=RobinsonCano&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941703" style="position: static; visibility: visible; width: 152px; height: 20px;" data-screen-name="RobinsonCano"></iframe>
+</li>
+<li>
+<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=Mariners&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941705" style="position: static; visibility: visible; width: 121px; height: 20px;" data-screen-name="Mariners"></iframe>
+</li>
+</ul>
+<a data-remodal-target="modal" href="#" class="view-toggle">View More Bio Info +</a>
+</div>
+<div class="player-stats-summary-large">
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>AB</th>
+<th>R</th>
+<th>H</th>
+<th>HR</th>
+<th>RBI</th>
+<th>SB</th>
+<th>AVG</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016 Spring Training Stats</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Spring Training Career Stats</td>
+<td>589</td>
+<td>83</td>
+<td>203</td>
+<td>18</td>
+<td>110</td>
+<td>5</td>
+<td>.345</td>
+<td>.369</td>
+<td>.894</td>
+</tr>
+<tr>
+<td>2015 Stats</td>
+<td>624</td>
+<td>82</td>
+<td>179</td>
+<td>21</td>
+<td>79</td>
+<td>2</td>
+<td>.287</td>
+<td>.334</td>
+<td>.779</td>
+</tr>
+<tr>
+<td>MLB Career Stats</td>
+<td>6555</td>
+<td>958</td>
+<td>2015</td>
+<td>239</td>
+<td>983</td>
+<td>50</td>
+<td>.307</td>
+<td>.356</td>
+<td>.850</td>
+</tr>
+</tbody>
+</table>
+<ul class="status horizontal-list">
+<li>
+<span class="label">Status: </span>Active
+</li>
+<li>
+<span class="label">Next SEA Game: </span>
+<a href="http://mlb.mlb.com/schedule/index.jsp?c_id=sea">
+3/2
+vs SD
+</a>
+</li>
+</ul>
+</div>
+<div class="ad-responsive-slot">
+<div id="ad-summary-small-1" class="ad-responsive-size" data-thresholds="[0,1]" data-sizes="[[320,50]]" data-targeting="{&quot;slot&quot;:&quot;ad-summary-small&quot;,&quot;pos&quot;:&quot;1&quot;,&quot;club&quot;:&quot;sea&quot;}" style="display: block;">
+<div id="google_ads_iframe_/2605/mlb.mlb/player_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2605/mlb.mlb/player_0" title="3rd party ad content" name="google_ads_iframe_/2605/mlb.mlb/player_0" width="320" height="50" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/2605/mlb.mlb/player_0__hidden__" title="" name="google_ads_iframe_/2605/mlb.mlb/player_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+<div id="ad-summary-large-1" class="ad-responsive-size" data-thresholds="[2,3]" data-sizes="[[970,90],[970,66],[728,90]]" data-targeting="{&quot;slot&quot;:&quot;ad-summary-large&quot;,&quot;pos&quot;:&quot;1&quot;,&quot;club&quot;:&quot;sea&quot;}" style="display: none;">
+<div id="google_ads_iframe_/2605/mlb.mlb/player_4__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2605/mlb.mlb/player_4" title="3rd party ad content" name="google_ads_iframe_/2605/mlb.mlb/player_4" width="970" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/2605/mlb.mlb/player_4__hidden__" title="" name="google_ads_iframe_/2605/mlb.mlb/player_4__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+</div>
+</section>
+</div>
+</section>
+
+
+
+</div>
