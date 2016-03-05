@@ -22,6 +22,9 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00ea-4ffd-a36b-26e2577a83f1-4.svg#web") format('svg');
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 #main {
   background-color: #000;
@@ -41,7 +44,6 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
   a {
     color: #333;
     text-decoration: none;
-
     .view-toggle {
       font-size: .8em;
       font-family: mlb_primary,helvetica,arial,sans-serif;
@@ -62,7 +64,12 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
    line-height: 65px !important;
    text-align: center;
    margin: auto;
- }
+
+   span {
+     background-color: #fff;
+     padding: 0 20px;
+   }
+  }
 
   h3 {
     color: #666;
@@ -244,11 +251,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
 
   #player-header {
-    //Hitter
     background-image: url("../images/pose2.jpg");
-    //Outfield
-    //background-image: url("http://i.imgur.com/c5cDWcO.jpg");
-    //Pitching
     position: relative;
     background-size: cover;
     background-position: top center;
@@ -289,7 +292,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     >.container {
       position: relative;
       background-color: transparent !important;
-      padding-top: 33.3%;
+      padding-top: 66%;
     }
 
     .player-vitals {
@@ -389,6 +392,10 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
   }
 
   #quick-stats {
+    ::before {
+      content: "";
+      display: table;
+    }
     .view-toggle {
       display: inline-block;
       float: left;
@@ -433,7 +440,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
         }
       }
     }
-/*
+
     .player-stats-summary-large {
       width: 70%;
       float: left;
@@ -448,7 +455,13 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
           height: 31px;
         }
 
-        td {
+        thead {
+          tr {
+              border-bottom: 1px solid #d2d2d2;
+          }
+        }
+
+        td,th {
           padding: 6px;
           font-family: droid-sans-mono,courier;
           text-align: right;
@@ -460,9 +473,34 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
           font-family: helvetica,arial,sans-serif;
           text-align: left;
         }
-      }
-    }*/
+        th {
+          background-color: #e3e3e3;
+          font-weight: normal;
+          font-family: helvetica,arial,sans-serif;
+        }
+        th:first-child {
+          border-right: 1px solid #ddd;
+          text-align: left;
+        }
 
+      }
+    }
+
+  }
+
+  #quick-stats:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+ #quick-stats:before {
+    content: "";
+    display: table;
+  }
+
+  #stats {
+    overflow: hidden;
   }
 
   #global-footer-container {

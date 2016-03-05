@@ -1,10 +1,10 @@
 ---
 title: Jun
 name: John Seubert
-number: #11
+number: 11
 position: iOS Developer
 height: 6' 2"
-weight: 19
+weight: 190
 
 age: 26
 linkedin: "https://www.linkedin.com/in/jaseubert"
@@ -25,7 +25,7 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
       <div class="player-vitals">
         <h1>
           <span class="player-name"><%= current_page.data.name %></span>
-          <span class="player-number"<%= current_page.data.name %></span>
+          <span class="player-number">#<%= current_page.data.number %></span>
         </h1>
         <ul>
           <li><%= current_page.data.position %></li>
@@ -40,9 +40,9 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
     <nav id="player-nav">
       <div class="container">
         <div class="player-vitals-mini">
-          <img src="/shared/images/logos/32x32_cap/136.png" srcset="http://m.mlb.com/shared/images/logos/32x32_cap/136@2x.png 2x, http://m.mlb.com/shared/images/logos/32x32_cap/136@3x.png 3x">
+          <img src="images/136.png" srcset="images/136@2x.png 2x, images/136@3x.png 3x">
           <div class="player-vitals-mini-name"><%= current_page.data.name %></div>
-          <span class="player-vitals-mini-number"><%= current_page.data.number %></span>
+          <span class="player-vitals-mini-number">#<%= current_page.data.number %></span>
           <span><%= current_page.data.position %></span>
         </div>
         <div class="player-nav-items" style="border-color:#0C2C56;color:#0C2C56">
@@ -149,16 +149,16 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
         </div>
 
         <div class="player-bio">
-          <h3>Robinson Cano Bio</h3>
+          <h3>John Seubert Bio</h3>
           <ul>
             <li class="full-name"><span class="label">Full Name:</span> John Armin Seubert</li>
             <li><span class="label">Pronunciation:</span> JUN SUE-bert</li>
             <li><span class="label">Born:</span> 10/16/1989 in Bellevue, Washington</li>
             <li><span class="label">High School:</span> Skyline High School, Sammamish, WA</li>
             <li><span class="label">College:</span> Santa Clara University, Santa Clara, CA</li>
-            <li><span class="label">Relationship(s):</span> brother of <a href="https://www.linkedin.com/in/emily-seubert-09ab8890">Emily Seubert</a>
-            </li>
+            <li><span class="label">Relationship(s):</span> brother of <a href="https://www.linkedin.com/in/emily-seubert-09ab8890">Emily Seubert</a></li>
           </ul>
+
           <ul class="twitter-buttons">
             <li>
               <a href="https://twitter.com/seubjoh" class="twitter-follow-button" data-show-count="false">Follow @seubjoh</a>
@@ -168,9 +168,9 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
               <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=Mariners&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941705" style="position: static; visibility: visible; width: 121px; height: 20px;" data-screen-name="Mariners"></iframe>
             </li>
           </ul>
+
           <a href="<%= current_page.data.linkedin %>" class="view-toggle">View More Bio Info +</a>
         </div>
-
         <div class="player-stats-summary-large">
           <table>
             <thead>
@@ -238,7 +238,7 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
               </tr>
             </tbody>
           </table>
-          <!--
+
           <ul class="status horizontal-list">
             <li>
               <span class="label">Status: </span>Active
@@ -248,13 +248,222 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
               <a href="http://mlb.mlb.com/schedule/index.jsp?c_id=sea">3/2 vs SD</a>
             </li>
           </ul>
-        -->
+
         </div>
       </section>
     </div>
   </section>
+
+  <section id="stats">
+    <div class = "container">
+      <h2>
+        <span>Stats</span>
+      </h2>
+    </div>
+  </section>
+  <div id="global-footer-container" class=" team">
+  </div>
 </div>
+
 <!--
-<div id="global-footer-container" class=" team">
-</div>
+<section id="summary">
+  <div class="container">
+    <h2 class="hidden"><span>Summary</span></h2>
+    <section id="quick-stats">
+      <div class="player-stats-summary-small">
+        <h3 class="label-table">Robinson Cano 2016 Spring Training Stats</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>AVG</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>SB</th>
+              <th>OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="label-table">Robinson Cano Spring Training Career Stats</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>AVG</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>SB</th>
+              <th>OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.345</td>
+              <td>18</td>
+              <td>110</td>
+              <td>5</td>
+              <td>.894</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="label-table">Robinson Cano Stats</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>AVG</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>SB</th>
+              <th>OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.287</td>
+              <td>21</td>
+              <td>79</td>
+              <td>2</td>
+              <td>.779</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="label-table">Robinson Cano MLB Career Stats</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>AVG</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>SB</th>
+              <th>OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.307</td>
+              <td>239</td>
+              <td>983</td>
+              <td>50</td>
+              <td>.850</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="player-bio">
+        <h3>John Seubert Bio</h3>
+        <ul>
+          <li class="full-name"><span class="label">Full Name:</span> John Armin Seubert</li>
+          <li><span class="label">Pronunciation:</span> JUN SUE-bert</li>
+          <li><span class="label">Born:</span> 10/16/1989 in Bellevue, Washington</li>
+          <li><span class="label">High School:</span> Skyline High School, Sammamish, WA</li>
+          <li><span class="label">College:</span> Santa Clara University, Santa Clara, CA</li>
+          <li><span class="label">Pronunciation:</span> JUN SUE-bert</li>
+          <li><span class="label">Born:</span> 10/16/1989 in Bellevue, Washington</li>
+          <li><span class="label">High School:</span> Skyline High School, Sammamish, WA</li>
+          <li><span class="label">College:</span> Santa Clara University, Santa Clara, CA</li>
+          <li><span class="label">Relationship(s):</span> brother of <a href="https://www.linkedin.com/in/emily-seubert-09ab8890">Emily Seubert</a></li>
+        </ul>
+
+        <ul class="twitter-buttons">
+          <li>
+            <a href="https://twitter.com/seubjoh" class="twitter-follow-button" data-show-count="false">Follow @seubjoh</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
+          <li>
+            <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=Mariners&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941705" style="position: static; visibility: visible; width: 121px; height: 20px;" data-screen-name="Mariners"></iframe>
+          </li>
+        </ul>
+
+        <a href="<%= current_page.data.linkedin %>" class="view-toggle">View More Bio Info +</a>
+      </div>
+      <div class="player-stats-summary-large">
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>AB</th>
+              <th>R</th>
+              <th>H</th>
+              <th>HR</th>
+              <th>RBI</th>
+              <th>SB</th>
+              <th>AVG</th>
+              <th>OBP</th>
+              <th>OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016 Spring Training Stats</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Spring Training Career Stats</td>
+              <td>589</td>
+              <td>83</td>
+              <td>203</td>
+              <td>18</td>
+              <td>110</td>
+              <td>5</td>
+              <td>.345</td>
+              <td>.369</td>
+              <td>.894</td>
+            </tr>
+            <tr>
+              <td>2015 Stats</td>
+              <td>624</td>
+              <td>82</td>
+              <td>179</td>
+              <td>21</td>
+              <td>79</td>
+              <td>2</td>
+              <td>.287</td>
+              <td>.334</td>
+              <td>.779</td>
+            </tr>
+            <tr>
+              <td>MLB Career Stats</td>
+              <td>6555</td>
+              <td>958</td>
+              <td>2015</td>
+              <td>239</td>
+              <td>983</td>
+              <td>50</td>
+              <td>.307</td>
+              <td>.356</td>
+              <td>.850</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul class="status horizontal-list">
+          <li>
+            <span class="label">Status: </span>Active
+          </li>
+          <li>
+            <span class="label">Next SEA Game: </span>
+            <a href="http://mlb.mlb.com/schedule/index.jsp?c_id=sea">3/2 vs SD</a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+  </div>
+</section>
 -->
