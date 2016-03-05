@@ -26,6 +26,27 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 #main {
   background-color: #000;
   font-family: mlb_primary,helvetica,arial,sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+
+  .hidden {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    .view-toggle {
+      font-size: .8em;
+      font-family: mlb_primary,helvetica,arial,sans-serif;
+    }
+  }
 
   h1 {
     color: #fff;
@@ -33,9 +54,62 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     font-size: 2em;
   }
 
+  h2 {
+   color: #333;
+   font-family: mlb_primary,helvetica,arial,sans-serif;
+   font-size: 1.4em;
+   height: 65px;
+   line-height: 65px !important;
+   text-align: center;
+   margin: auto;
+ }
+
+  h3 {
+    color: #666;
+    font-family: mlb_primary,helvetica,arial,sans-serif;
+    font-size: 1.125em;
+    letter-spacing: .025em;
+    margin: 0 0 1em 0;
+  }
+
   ul {
     margin: 0;
     padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  td, th {
+    padding: 0;
+  }
+
+  .label {
+    font-weight: bold;
   }
 
   .container {
@@ -49,6 +123,10 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       padding: 0 2.5%;
     }
   }
+  .container>section {
+    padding-bottom: 1.5em;
+  }
+
   #player-nav {
     font-family: mlb_primary,Arial,Helvetica,Sans-Serif;
     bottom: -65px;
@@ -69,7 +147,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
     >.container {
       background: url('http://ui.bamstatic.com/mlbv2/sections/player2/1.4.22/images/nav-bg.gif') !important;
-    //  background-color: #ff0;
+      background-color: #fff;
       height: 100%;
 
     }
@@ -77,7 +155,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     @media(max-width: 529px){
         height: 50px;
         bottom: -50px;
-    } 
+    }
 
     @media (max-width: 400px){
       .container {
@@ -167,7 +245,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
   #player-header {
     //Hitter
-    background-image: url("http://i.imgur.com/BUChQ6H.jpg");
+    background-image: url("../images/pose2.jpg");
     //Outfield
     //background-image: url("http://i.imgur.com/c5cDWcO.jpg");
     //Pitching
@@ -305,241 +383,95 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       display: none;
     }
   }
-}
 
+  #summary .container {
+    padding-top: 30px;
+  }
 
+  #quick-stats {
+    .view-toggle {
+      display: inline-block;
+      float: left;
+      clear: both;
+    }
 
+    .player-stats-summary-small {
+      display: none;
+    }
 
+    @media (min-width: 811px) {
+      .full-name {
+        font-weight: bold;
+        span {
+          display: none;
+        }
+      }
+    }
 
+    .player-bio {
+      float: left;
+      width: 30%;
+      padding-right: 2.5%;
+      @media (max-width: 810px) {
+          width: 100%;
+      }
+      h3 {
+        display: none;
+      }
+      li {
+        font-family: helvetica,arial,sans-serif;
+        font-size: .875em;
+        margin-bottom: .25em;
+      }
+
+      .twitter-buttons {
+        li:first-child {
+          margin-right: 2.5%;
+        }
+        li {
+          float: left;
+        }
+      }
+    }
 /*
-header {
-  display: block;
-}
+    .player-stats-summary-large {
+      width: 70%;
+      float: left;
 
-#main {
-  background-color: #000;
-  font-family: helvetica,arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-}
+      table {
+        font-size: .8em;
+        border: 1px solid #d2d2d2;
+        width: 100%;
+        margin-bottom: .75em;
+        tr {
+          border-bottom: 1px solid #e9e9e9;
+          height: 31px;
+        }
 
-#main ul {
-    margin: 0;
-    padding: 0;
-}
+        td {
+          padding: 6px;
+          font-family: droid-sans-mono,courier;
+          text-align: right;
+        }
 
-#player-header {
-  position: relative;
-  background-size: cover;
-  background-position: top center;
-  box-shadow: 0 -30px 50px 20px #000 inset;
-  max-width: 1500px;
-}
+        td:first-child {
+          background-color: #f6f6f6;
+          border-right: 1px solid #e9e9e9;
+          font-family: helvetica,arial,sans-serif;
+          text-align: left;
+        }
+      }
+    }*/
 
-#player-header .player-headshot {
-    position: absolute;
-    bottom: -76px;
-    left: 2.5%;
-    width: 180px;
-    padding: 10px;
-    background-color: #ebebeb;
-    border: 1px solid #cfcfcf;
-    z-index: 2;
-    transition: .3s bottom;
-}
-
-
-
-
-//While Less than 1280px
-//Less Than XXL
-@media (max-width: 1280px) {
-  #main .container {
-    padding: 0 2.5%;
-  }
-  #player-header {
-    box-shadow: 0 -30px 50px 0 #000 inset;
-  }
-}
-
-#player-header > .container {
-  position: relative;
-  background-color: transparent !important;
-  padding-top: 33.3%;
-}
-
-#player-header .player-vitals {
-    position: absolute;
-    bottom: 16px;
-    text-shadow: 1px 1px 11px #000;
-    left: 265px;
-    z-index: 1;
-}
-
-//While Less than 990px
-//Less Than XL
-@media (max-width: 990px) {
-  #player-header > .container {
-    padding-top: 40%;
   }
 
-  #player-header .player-headshot {
-    border: 4px solid #fff;
-    bottom: 16px;
-    left: 2.5%;
-    padding: 0;
-    width: 20%;
-  }
+  #global-footer-container {
+      font: 12px arial,helvetica,sans-serif;
+      background: #000;
+      overflow: hidden;
+      height: 200px;
+      width: 100%;
 
-  #player-header .player-vitals {
-    left: 2.5%;
-    margin-left: 22.5%;
-    bottom: 16px;
+
   }
 }
-
-#main h1 {
-    color: #fff;
-    font-family: mlb_primary,helvetica,arial,sans-serif;
-    font-size: 2em;
-}
-
-//While bigger than 991px
-//Bigger than XL
-@media (min-width: 991px) {
-  #player-header {
-    margin: 0 auto 65px auto;
-  }
-  #player-header .player-vitals h1 {
-    font-size: 2em;
-  }
-  #player-header .player-vitals li {
-    font-size: 1.2em;
-}
-}
-
-#player-header .mlbpa-logo {
-    bottom: 16px;
-    position: absolute;
-    right: 16px;
-}
-
-//While Less than 600px
-//Less Than Large
-@media (max-width: 600px) {
-  #player-header > .container {
-    padding-top: 50%;
-  }
-  #player-header .mlbpa-logo {
-    bottom: 8px;
-    right: 8px;
-  }
-
-  #player-header .player-vitals {
-    bottom: 8px;
-    left: 16px;
-    margin-left: 22%;
-  }
-}
-
-#player-header .player-vitals h1 {
-    margin-bottom: .1em;
-}
-
-#player-header .player-vitals li {
-    float: left;
-    list-style-type: none;
-    color: #fff;
-    font-family: mlb_primary,helvetica,arial,sans-serif;
-    font-size: 1em;
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px solid #fff;
-}
-
-//While Less than 529px
-//Less Than Medium
-@media (max-width: 529px) {
-  #player-header {
-    margin-bottom: 50px;
-  }
-  #player-header .mlbpa-logo {
-    width: 30px;
-  }
-  #player-header .player-vitals h1 {
-    font-size: 1.5em;
-  }
-  #player-header .player-vitals li {
-    font-size: .75em;
-}
-}
-
-#player-header .player-number {
-    border-left: 2px solid #fff;
-    margin-left: 6px;
-    padding-left: 10px;
-}
-
-//While Less than 460px
-//Less Than Small
-@media (max-width: 460px) {
-  #player-header > .container {
-    padding-top: 55%;
-  }
-  #player-header .player-vitals h1 {
-    font-size: 1.25em;
-  }
-  #player-header .player-number {
-      margin-left: 4px;
-      padding-left: 6px;
-  }
-  #player-header .player-vitals li {
-      margin-right: 6px;
-      padding-right: 6px;
-  }
-
-}
-
-
-///OK new
-#player-nav {
-    font-family: mlb_primary,Arial,Helvetica,Sans-Serif;
-    bottom: -65px;
-    height: 65px;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    z-index: 1;
-}
-
-#player-nav .player-nav-items {
-    float: right;
-}
-
-#player-nav .player-nav-items a {
-    text-shadow: 0 1px #fff;
-    display: block;
-    float: left;
-    padding: 0 .65em;
-    margin: 0 .5em;
-    height: 65px;
-    line-height: 65px;
-    color: #555;
-    font-size: 1.2em;
-    border-bottom: solid 0 transparent;
-    background: transparent;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#player-nav .player-nav-items a.active {
-    color: #333;
-    border-width: 0 0 3px;
-    border-color: inherit;
-}
-
-#player-nav>.container {
-    //background: url('../images/nav-bg.gif') !important;
-    background-color: #fff;
-    height: 100%;
-}*/
