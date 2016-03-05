@@ -529,7 +529,7 @@ table {
             font-size: .8em; } }
   /* line 219, site.css.scss */
   #main #player-header {
-    background-image: url("../images/pose.jpg");
+    background-image: url("../images/pose2.jpg");
     position: relative;
     background-size: cover;
     background-position: top center;
@@ -569,7 +569,7 @@ table {
     #main #player-header > .container {
       position: relative;
       background-color: transparent !important;
-      padding-top: 50%; }
+      padding-top: 70%; }
     /* line 268, site.css.scss */
     #main #player-header .player-vitals {
       position: absolute;
@@ -690,7 +690,11 @@ table {
     /* line 404, site.css.scss */
     #main #quick-stats .player-bio .twitter-buttons li {
       float: left; }
-  /* line 411, site.css.scss */
+    /* line 409, site.css.scss */
+    #main #quick-stats .player-bio .player-stats-summary-large {
+      width: 70%;
+      float: left; }
+  /* line 416, site.css.scss */
   #main #global-footer-container {
     font: 12px arial,helvetica,sans-serif;
     background: #000;
