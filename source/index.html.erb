@@ -259,211 +259,38 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
       <h2>
         <span>Stats</span>
       </h2>
+      <div class="divider"></div>
+      <div id="stats-nav">
+        <div id="section_nav" class="tab-set tabs-4" data-bind="css: tabClass">
+          <a id="majorsTab" value="majors" href="" class="active">Majors </a>
+          <a id="minorsTab" value="minors" href="" class="">Minors </a>
+          <a id="collegeTab" value="college" href="" class="">College </a>
+          <a id="scoutingTab" value="scouting" href="" class="">Scouting Report </a>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class = "container">
+      <h2>
+        <span>Fantasy</span>
+      </h2>
+      <div class="divider"></div>
+
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class = "container">
+      <h2>
+        <span>Awards</span>
+      </h2>
+      <div class="divider"></div>
+
     </div>
   </section>
   <div id="global-footer-container" class=" team">
   </div>
 </div>
-
-<!--
-<section id="summary">
-  <div class="container">
-    <h2 class="hidden"><span>Summary</span></h2>
-    <section id="quick-stats">
-      <div class="player-stats-summary-small">
-        <h3 class="label-table">Robinson Cano 2016 Spring Training Stats</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>AVG</th>
-              <th>HR</th>
-              <th>RBI</th>
-              <th>SB</th>
-              <th>OPS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3 class="label-table">Robinson Cano Spring Training Career Stats</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>AVG</th>
-              <th>HR</th>
-              <th>RBI</th>
-              <th>SB</th>
-              <th>OPS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.345</td>
-              <td>18</td>
-              <td>110</td>
-              <td>5</td>
-              <td>.894</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3 class="label-table">Robinson Cano Stats</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>AVG</th>
-              <th>HR</th>
-              <th>RBI</th>
-              <th>SB</th>
-              <th>OPS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.287</td>
-              <td>21</td>
-              <td>79</td>
-              <td>2</td>
-              <td>.779</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3 class="label-table">Robinson Cano MLB Career Stats</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>AVG</th>
-              <th>HR</th>
-              <th>RBI</th>
-              <th>SB</th>
-              <th>OPS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>.307</td>
-              <td>239</td>
-              <td>983</td>
-              <td>50</td>
-              <td>.850</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="player-bio">
-        <h3>John Seubert Bio</h3>
-        <ul>
-          <li class="full-name"><span class="label">Full Name:</span> John Armin Seubert</li>
-          <li><span class="label">Pronunciation:</span> JUN SUE-bert</li>
-          <li><span class="label">Born:</span> 10/16/1989 in Bellevue, Washington</li>
-          <li><span class="label">High School:</span> Skyline High School, Sammamish, WA</li>
-          <li><span class="label">College:</span> Santa Clara University, Santa Clara, CA</li>
-          <li><span class="label">Pronunciation:</span> JUN SUE-bert</li>
-          <li><span class="label">Born:</span> 10/16/1989 in Bellevue, Washington</li>
-          <li><span class="label">High School:</span> Skyline High School, Sammamish, WA</li>
-          <li><span class="label">College:</span> Santa Clara University, Santa Clara, CA</li>
-          <li><span class="label">Relationship(s):</span> brother of <a href="https://www.linkedin.com/in/emily-seubert-09ab8890">Emily Seubert</a></li>
-        </ul>
-
-        <ul class="twitter-buttons">
-          <li>
-            <a href="https://twitter.com/seubjoh" class="twitter-follow-button" data-show-count="false">Follow @seubjoh</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </li>
-          <li>
-            <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.6a78875565a912489e9aef879c881358.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=Mariners&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1456900941705" style="position: static; visibility: visible; width: 121px; height: 20px;" data-screen-name="Mariners"></iframe>
-          </li>
-        </ul>
-
-        <a href="<%= current_page.data.linkedin %>" class="view-toggle">View More Bio Info +</a>
-      </div>
-      <div class="player-stats-summary-large">
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>AB</th>
-              <th>R</th>
-              <th>H</th>
-              <th>HR</th>
-              <th>RBI</th>
-              <th>SB</th>
-              <th>AVG</th>
-              <th>OBP</th>
-              <th>OPS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2016 Spring Training Stats</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Spring Training Career Stats</td>
-              <td>589</td>
-              <td>83</td>
-              <td>203</td>
-              <td>18</td>
-              <td>110</td>
-              <td>5</td>
-              <td>.345</td>
-              <td>.369</td>
-              <td>.894</td>
-            </tr>
-            <tr>
-              <td>2015 Stats</td>
-              <td>624</td>
-              <td>82</td>
-              <td>179</td>
-              <td>21</td>
-              <td>79</td>
-              <td>2</td>
-              <td>.287</td>
-              <td>.334</td>
-              <td>.779</td>
-            </tr>
-            <tr>
-              <td>MLB Career Stats</td>
-              <td>6555</td>
-              <td>958</td>
-              <td>2015</td>
-              <td>239</td>
-              <td>983</td>
-              <td>50</td>
-              <td>.307</td>
-              <td>.356</td>
-              <td>.850</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <ul class="status horizontal-list">
-          <li>
-            <span class="label">Status: </span>Active
-          </li>
-          <li>
-            <span class="label">Next SEA Game: </span>
-            <a href="http://mlb.mlb.com/schedule/index.jsp?c_id=sea">3/2 vs SD</a>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-  </div>
-</section>
--->

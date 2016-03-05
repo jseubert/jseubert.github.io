@@ -115,6 +115,13 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     padding: 0;
   }
 
+  .divider {
+    border-top: 1px solid #ccc;
+    height: 33px;
+    margin-top: -33px;
+    width: 100%;
+  }
+
   .label {
     font-weight: bold;
   }
@@ -389,6 +396,12 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
   #summary .container {
     padding-top: 30px;
+    @media (max-width: 990px) {
+      padding-top: calc(2.5% + 65px);
+    }
+    @media (max-width: 529px) {
+      padding-top: calc(2.5% + 50px);
+    }
   }
 
   #quick-stats {
@@ -424,6 +437,9 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       }
       h3 {
         display: none;
+        @media (max-width: 810px) {
+          display: block;
+        }
       }
       li {
         font-family: helvetica,arial,sans-serif;
@@ -444,6 +460,10 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     .player-stats-summary-large {
       width: 70%;
       float: left;
+
+      @media (max-width: 810px) {
+        display: none;
+      }
 
       table {
         font-size: .8em;
@@ -501,6 +521,81 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
   #stats {
     overflow: hidden;
+  }
+
+  #stats-nav {
+    text-align: center;
+    //margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    .tab-set {
+      display: inline-block;
+      a {
+        border: 1px solid #ccc;
+        border-left: none;
+        color: #333;
+        font-family: mlb_primary,helvetica,arial,sans-serif;
+        font-size: .875em;
+        float: left;
+        padding: 10px 20px;
+
+        .active {
+          background-color: #e3e3e3;
+        }
+      }
+      a:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-left: 1px solid #ccc;
+
+
+      }
+      a:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-left: none;
+      }
+    }
+
+    .tab-set.tabs-4 {
+      @media (max-width: 580px) {
+        a {
+          width: 50%;
+          margin: 0;
+          padding: 10px 0;
+          border: 1px solid #ccc;
+        }
+        a:first-child {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 0;
+        }
+
+        a:nth-child(2) {
+          border-top-right-radius: 3px;
+          margin-left: -1px;
+        }
+
+        a:nth-child(3) {
+          border-bottom-left-radius: 3px;
+          margin-top: -1px;
+        }
+        a:last-child {
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 0;
+          margin: -1px;
+        }
+      }
+    }
+
+    .tab-set:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  #stats-nav .tab-set:before {
+      content: "";
+      display: table;
   }
 
   #global-footer-container {
