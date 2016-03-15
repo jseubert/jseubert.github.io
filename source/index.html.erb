@@ -49,7 +49,7 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
           <a id="summary-nav-item" href="#summary" class="active">Summary</a>
           <a id="stats-nav-item" href="#stats" class="">Stats</a>
           <a id="news-nav-item" href="#news">Fantasy</a>
-          <a id="awards-nav-item" href="#awards">Awards</a>
+          <a id="apps-nav-item" href="#apps">Apps</a>
           <a id="shop-nav-item" class="shop-link" href="//shop.mlb.com/">Shop</a>
         </div>
       </div>
@@ -261,14 +261,246 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
       </h2>
       <div class="divider"></div>
       <div id="stats-nav">
-        <div id="section_nav" class="tab-set tabs-4" data-bind="css: tabClass">
-          <a id="majorsTab" value="majors" href="" class="active">Majors </a>
-          <a id="minorsTab" value="minors" href="" class="">Minors </a>
-          <a id="collegeTab" value="college" href="" class="">College </a>
-          <a id="scoutingTab" value="scouting" href="" class="">Scouting Report </a>
+        <div id="section_nav" class="tab-set tabs-4">
+          <li id="majorsTab"
+            unselectable="on"
+            onselectstart="return false;"
+            onmousedown="return false;"
+            class="active"
+              unselectable="on"
+              onselectstart="return false;"
+              onmousedown="return false;"
+              class="active">Majors </li>
+          <li id="minorsTab" class=""
+            unselectable="on"
+            onselectstart="return false;"
+            onmousedown="return false;"
+            class="active">Minors </li>
+          <li id="collegeTab" class=""
+            unselectable="on"
+            onselectstart="return false;"
+            onmousedown="return false;"
+            class="active">College </li>
+          <li id="scoutingTab" class=""
+            unselectable="on"
+            onselectstart="return false;"
+            onmousedown="return false;"
+            class="active">Scouting Report </li>
         </div>
       </div>
-      <div></div>
+      <div id="majorsPanel" class="stat-panel" style="display:block;">
+        <h3 class="title-stats">John Seubert Majors Stats</h3>
+        <div id="careerStats">
+          <div class="responsive-table">
+            <div class="scrollable">
+              <table class="scrollable-table">
+                <thead>
+                  <tr>
+                    <th data-index="0">Year</th>
+                    <th data-index="1">Months</th>
+                    <th data-index="2">Team</th>
+                    <th data-index="3">Location</th>
+                    <th data-index="4">Position</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2013</td>
+                    <td>Nov - Dec</td>
+                    <td>Personal Capital</td>
+                    <td>Redwood City, CA</td>
+                    <td>Junior Mobile Software Developer</td>
+                  </tr>
+                  <tr>
+                    <td>2014</td>
+                    <td>Jan - Dec</td>
+                    <td>Personal Capital</td>
+                    <td>Redwood City, CA</td>
+                    <td>Mobile Software Developer</td>
+                  </tr>
+                  <tr>
+                    <td>2015</td>
+                    <td>Jan - Dec</td>
+                    <td>Personal Capital</td>
+                    <td>Redwood City, CA</td>
+                    <td>Mobile Software Developer</td>
+                  </tr>
+                  <tr>
+                    <td>2016</td>
+                    <td>Jan - Present</td>
+                    <td>Personal Capital</td>
+                    <td>Redwood City, CA</td>
+                    <td>Mobile Software Developer</td>
+                  </tr>
+                </tbody>
+                <tfoot class="footer">
+                  <tr>
+                    <td>Career</td>
+                    <td><script>document.write(workingMonths());</script> </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3 class="title-summary">Details</h3>
+            <ul class ="table-summary">
+              <li>Worked with electrical and biological engineers to create a water pathogen detector probe attached to an Android App with a formal paper being submitted for the product in February 2013</li>
+              <li>Helped test and implement technologies such as ODK and openXdata for non-profit organization NetHope to use in developing countries as crowd survey tools</li>
+              <li>Maintained lab appearance and provided tours to interested parties</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="minorsPanel" class="stat-panel" style="display:none;">
+        <h3 class="title-stats">John Seubert Minors Stats</h3>
+          <div id="careerStats">
+            <div class="responsive-table">
+              <div class="scrollable">
+                <table class="scrollable-table">
+                  <thead>
+                    <tr>
+                      <th data-index="0">Year</th>
+                      <th data-index="1">Months</th>
+                      <th data-index="2">Team</th>
+                      <th data-index="3">Location</th>
+                      <th data-index="4">Position</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2012</td>
+                      <td>June - Dec</td>
+                      <td>Santa Clara University</td>
+                      <td>Santa Clara, CA</td>
+                      <td>Frugal Lab Assistant</td>
+                    </tr>
+                    <tr>
+                      <td>2013</td>
+                      <td>Jan - June</td>
+                      <td>Santa Clara University</td>
+                      <td>Santa Clara, CA</td>
+                      <td>Frugal Lab Assistant</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h3 class="title-summary">Details</h3>
+              <ul class ="table-summary">
+                <li>Worked with electrical and biological engineers to create a water pathogen detector probe attached to an Android App with a formal paper being submitted for the product in February 2013</li>
+                <li>Helped test and implement technologies such as ODK and openXdata for non-profit organization NetHope to use in developing countries as crowd survey tools</li>
+                <li>Maintained lab appearance and provided tours to interested parties</li>
+              </ul>
+            </div>
+            <div class="responsive-table">
+              <div class="scrollable">
+                <table class="scrollable-table">
+                  <thead>
+                    <tr>
+                      <th data-index="0">Year</th>
+                      <th data-index="1">Months</th>
+                      <th data-index="2">Team</th>
+                      <th data-index="3">Location</th>
+                      <th data-index="4">Position</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2010</td>
+                      <td>Jun - Sept</td>
+                      <td>Applied Precision, Inc.</td>
+                      <td>Issaquah, WA</td>
+                      <td>Software Engineering Intern</td>
+                    </tr>
+                    <tr>
+                      <td>2009</td>
+                      <td>Jun - Sept</td>
+                      <td>Applied Precision, Inc.</td>
+                      <td>Issaquah, WA</td>
+                      <td>Software Engineering Intern</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h3 class="title-summary">Details</h3>
+              <ul class ="table-summary">
+                <li>Created an image correction algorithm using a calibration slide with Matlab</li>
+                <li>Developed a process for customers to utilize NoMachine products for remote login to microscopy computers purchased from Applied Precision</li>
+                <li>Used DirectX, C#, and C in Linux environment to create image visualization and correction modules for microscopy systems</li>
+                <li>Implemented a prototype 3D virtualization demo to view and manipulate 3D cells with Nintendo Wii remote technology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div id="collegePanel" class="stat-panel" style="display:none;">
+        <h3 class="title-stats">John Seubert College Stats</h3>
+        <div id="careerStats">
+          <div class="responsive-table">
+            <div class="scrollable">
+              <table class="scrollable-table">
+                <thead>
+                  <tr>
+                    <th data-index="0">Year</th>
+                    <th data-index="1">Team</th>
+                    <th data-index="2">League</th>
+                    <th data-index="3">Location</th>
+                    <th data-index="4">Cumulative GPA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2013</td>
+                    <td>Santa Clara University</td>
+                    <td>Graduate</td>
+                    <td>Santa Clara, CA</td>
+                    <td>3.360</td>
+                  </tr>
+                  <tr>
+                    <td>2011</td>
+                    <td>Santa Clara University</td>
+                    <td>Undergraduate</td>
+                    <td>Santa Clara, CA</td>
+                    <td>3.033</td>
+                  </tr>
+                  <tr>
+                    <td>2011</td>
+                    <td>Santa Clara University</td>
+                    <td>Undergraduate</td>
+                    <td>Santa Clara, CA</td>
+                    <td>3.046</td>
+                  </tr>
+                  <tr>
+                    <td>2010</td>
+                    <td>Santa Clara University</td>
+                    <td>Undergraduate</td>
+                    <td>Santa Clara, CA</td>
+                    <td>3.169</td>
+                  </tr>
+                  <tr>
+                    <td>2009</td>
+                    <td>Santa Clara University</td>
+                    <td>Undergraduate</td>
+                    <td>Santa Clara, CA</td>
+                    <td>3.593</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3 class="title-summary">Details</h3>
+          </div>
+        </div>
+      </div>
+      <div id="scoutingPanel" class="stat-panel" style="display:none;">scoutingTab</div>
     </div>
   </section>
 
@@ -282,10 +514,10 @@ linkedin: "https://www.linkedin.com/in/jaseubert"
     </div>
   </section>
 
-  <section id="awards">
+  <section id="apps">
     <div class = "container">
       <h2>
-        <span>Awards</span>
+        <span>Apps</span>
       </h2>
       <div class="divider"></div>
 
