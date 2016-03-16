@@ -269,12 +269,18 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
           font-size: .8em;
         }
       }
+
+      a.active {
+        color: #333;
+        border-width: 0 0 3px;
+        border-color: inherit;
+      }
     }
   }
 
 
   #player-header {
-    background-image: url("../images/pose2.jpg");
+    background-image: url("../images/outfield.jpg");
     position: relative;
     background-size: cover;
     background-position: top center;
@@ -315,7 +321,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     >.container {
       position: relative;
       background-color: transparent !important;
-      padding-top: 66%;
+      padding-top: 33.3%;
     }
 
     .player-vitals {
