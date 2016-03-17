@@ -452,7 +452,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
 
     .player-bio {
       float: left;
-      width: 30%;
+      width: 40%;
       padding-right: 2.5%;
       @media (max-width: 810px) {
           width: 100%;
@@ -480,11 +480,12 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     }
 
     .player-stats-summary-large {
-      width: 70%;
-      float: left;
+      width: 60%;
+      float: right;
 
       @media (max-width: 810px) {
-        display: none;
+        width: 100%;
+        margin-top: 15px;
       }
 
       table {

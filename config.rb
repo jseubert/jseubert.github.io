@@ -31,6 +31,10 @@ configure :development do
   activate :livereload
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-36917717-2' # Replace with your property ID.
+end
+
 ###
 # Helpers
 ###
