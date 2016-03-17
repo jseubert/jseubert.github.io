@@ -818,7 +818,7 @@ table {
     position: relative;
     margin-bottom: 0;
     width: 100%;
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
     @media (max-width: 780px) {
       /* line 551, site.css.scss */
       #main div.responsive-table div.scrollable {
@@ -963,18 +963,24 @@ table {
     height: 200px;
     width: 100%; }
   /* line 736, site.css.scss */
-  #main #careerStats {
+  #main .table-details {
     margin-botton: 1.5em; }
     /* line 739, site.css.scss */
-    #main #careerStats .title-summary {
+    #main .table-details .title-summary {
       margin-bottom: 0.5em; }
     /* line 743, site.css.scss */
-    #main #careerStats .table-summary {
-      margin: 10px 10px 30px 10px;
+    #main .table-details .table-summary {
+      margin: 10px 10px 10px 10px;
       padding: 0 10px 0 10px;
       font-family: helvetica,arial,sans-serif;
       font-size: .875em; }
       /* line 749, site.css.scss */
-      #main #careerStats .table-summary li {
+      #main .table-details .table-summary li {
         list-style: square;
         padding-bottom: 5px; }
+      /* line 753, site.css.scss */
+      #main .table-details .table-summary ul {
+        padding-left: 20px; }
+        /* line 755, site.css.scss */
+        #main .table-details .table-summary ul li {
+          list-style: none; }
