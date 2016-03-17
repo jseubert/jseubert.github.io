@@ -76,7 +76,16 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     font-family: mlb_primary,helvetica,arial,sans-serif;
     font-size: 1.125em;
     letter-spacing: .025em;
-    margin: 0 0 1em 0;
+    margin: 0 0 0 0;
+    padding-bottom: 1em;
+  }
+
+  h4 {
+    background: none;
+    font-family: mlb_primary,helvetica,arial,sans-serif;
+    font-size: 1em;
+    margin: 0 0 4px 0;
+    color: #444;
   }
 
   ul {
@@ -758,5 +767,60 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       }
     }
 
+  }
+
+  #news {
+    h3 {
+      padding-bottom: 0;
+    }
+  }
+
+  #apps {
+    #apps-section {
+      .apps-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: .75em;
+
+        .app-item {
+          flex: 0 0 33.3%;
+          border: 1px solid #d2d2d2;
+          padding: .75em;
+          margin: -1px -1px 0 0;
+          @media (max-width: 990px) {
+            flex: 0 0 50%;
+          }
+          @media (max-width: 600px) {
+            flex: 0 0 100%;
+          }
+
+          .app-icon {
+            width: 25%;
+            margin:auto;
+            padding-top: 20px;
+            img {
+              width: 100%;
+            }
+          }
+
+          h4 {
+            margin-top:10px;
+            border-bottom: 2px solid #e3e3e3;
+            padding-bottom: 5px;
+            text-align: center;
+          }
+          p {
+            font-family: helvetica,arial,sans-serif;
+            font-size: .875em;
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  table{
+    width: 100%;
   }
 }
