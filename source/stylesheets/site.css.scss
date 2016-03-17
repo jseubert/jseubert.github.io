@@ -270,7 +270,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
         }
       }
 
-      a.active {
+      a.active, a:hover {
         color: #333;
         border-width: 0 0 3px;
         border-color: inherit;
