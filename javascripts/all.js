@@ -33,6 +33,7 @@ $(document).ready(function () {
       playerHeader.removeClass("sticky-nav-enabled");
   }
 
+  //Detect scroll to hide/show nav bar
   window.onscroll = function (e) {
   // called when the window is scrolled.
     var scroll = $(window).scrollTop();
@@ -42,8 +43,22 @@ $(document).ready(function () {
     } else {
         playerHeader.removeClass("sticky-nav-enabled");
     }
+
+    //figure out which row to highlight
+    if(scroll <= $("#stats")) {
+      
+    }
   }
 
+  //smooth scroll for navigation bar items
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - $("#player-nav").height()
+    }, 500);
+    return false;
+  });
+
+  //Segmented controller in Stats
   $("#section_nav").click(function (event) {
 
       $("li", this)

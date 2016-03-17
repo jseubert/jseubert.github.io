@@ -578,9 +578,14 @@ table {
           /* line 241, site.css.scss */
           #main #player-nav .player-nav-items a {
             font-size: .8em; } }
-  /* line 276, site.css.scss */
+      /* line 273, site.css.scss */
+      #main #player-nav .player-nav-items a.active {
+        color: #333;
+        border-width: 0 0 3px;
+        border-color: inherit; }
+  /* line 282, site.css.scss */
   #main #player-header {
-    background-image: url("../images/pose2.jpg");
+    background-image: url("../images/outfield.jpg");
     position: relative;
     background-size: cover;
     background-position: top center;
@@ -588,14 +593,14 @@ table {
     max-width: 1500px;
     margin: auto; }
     @media (min-width: 991px) {
-      /* line 276, site.css.scss */
+      /* line 282, site.css.scss */
       #main #player-header {
         margin: 0 auto 65px auto; } }
     @media (max-width: 1280px) {
-      /* line 276, site.css.scss */
+      /* line 282, site.css.scss */
       #main #player-header {
         box-shadow: 0 -30px 50px 0 #000 inset; } }
-    /* line 293, site.css.scss */
+    /* line 299, site.css.scss */
     #main #player-header .player-headshot {
       position: absolute;
       bottom: -76px;
@@ -609,29 +614,29 @@ table {
       transition: .3s bottom;
       vertical-align: middle; }
       @media (max-width: 990px) {
-        /* line 293, site.css.scss */
+        /* line 299, site.css.scss */
         #main #player-header .player-headshot {
           border: 4px solid #fff;
           bottom: 16px;
           left: 2.5%;
           padding: 0;
           width: 20%; } }
-    /* line 315, site.css.scss */
+    /* line 321, site.css.scss */
     #main #player-header > .container {
       position: relative;
       background-color: transparent !important;
-      padding-top: 66%; }
-    /* line 321, site.css.scss */
+      padding-top: 33.3%; }
+    /* line 327, site.css.scss */
     #main #player-header .player-vitals {
       position: absolute;
       bottom: 16px;
       text-shadow: 1px 1px 11px #000;
       left: 252px;
       z-index: 1; }
-      /* line 328, site.css.scss */
+      /* line 334, site.css.scss */
       #main #player-header .player-vitals h1 {
         margin-bottom: .1em; }
-      /* line 332, site.css.scss */
+      /* line 338, site.css.scss */
       #main #player-header .player-vitals li {
         float: left;
         list-style-type: none;
@@ -642,258 +647,258 @@ table {
         padding-right: 10px;
         border-right: 1px solid #fff; }
       @media (max-width: 990px) {
-        /* line 321, site.css.scss */
+        /* line 327, site.css.scss */
         #main #player-header .player-vitals {
           left: 2.5%;
           margin-left: 22.5%;
           bottom: 16px; } }
       @media (max-width: 600px) {
-        /* line 321, site.css.scss */
+        /* line 327, site.css.scss */
         #main #player-header .player-vitals {
           bottom: 8px;
           left: 16px;
           margin-left: 22.5%; }
-          /* line 350, site.css.scss */
+          /* line 356, site.css.scss */
           #main #player-header .player-vitals h1 {
             font-size: 1.5em; }
-          /* line 353, site.css.scss */
+          /* line 359, site.css.scss */
           #main #player-header .player-vitals li {
             font-size: .75em; } }
       @media (max-width: 379px) {
-        /* line 364, site.css.scss */
+        /* line 370, site.css.scss */
         #main #player-header .player-vitals h1 {
           font-size: 1.25em; }
-        /* line 368, site.css.scss */
+        /* line 374, site.css.scss */
         #main #player-header .player-vitals li {
           margin-right: 6px;
           padding-right: 6px; } }
-    /* line 375, site.css.scss */
+    /* line 381, site.css.scss */
     #main #player-header .mlbpa-logo {
       bottom: 16px;
       position: absolute;
       right: 16px; }
       @media (max-width: 600px) {
-        /* line 375, site.css.scss */
+        /* line 381, site.css.scss */
         #main #player-header .mlbpa-logo {
           bottom: 8px;
           right: 8px;
           width: 30px; } }
-  /* line 388, site.css.scss */
+  /* line 394, site.css.scss */
   #main #player-header.sticky-nav-enabled {
     max-width: 100%;
     max-height: 500px; }
     @media (min-width: 991px) {
-      /* line 393, site.css.scss */
+      /* line 399, site.css.scss */
       #main #player-header.sticky-nav-enabled .player-headshot {
         bottom: 76px;
         opacity: 0; } }
-    /* line 398, site.css.scss */
+    /* line 404, site.css.scss */
     #main #player-header.sticky-nav-enabled #player-nav {
       background-image: url("../images/nav-bg.gif") !important;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
       position: fixed;
       -webkit-transform: translateZ(0);
       top: 0; }
-      /* line 404, site.css.scss */
+      /* line 410, site.css.scss */
       #main #player-header.sticky-nav-enabled #player-nav .player-vitals-mini {
         top: 0; }
-    /* line 408, site.css.scss */
+    /* line 414, site.css.scss */
     #main #player-header.sticky-nav-enabled .player-vitals {
       display: none; }
-  /* line 413, site.css.scss */
+  /* line 419, site.css.scss */
   #main #summary .container {
     padding-top: 30px; }
     @media (max-width: 990px) {
-      /* line 413, site.css.scss */
+      /* line 419, site.css.scss */
       #main #summary .container {
         padding-top: calc(2.5% + 65px); } }
     @media (max-width: 529px) {
-      /* line 413, site.css.scss */
+      /* line 419, site.css.scss */
       #main #summary .container {
         padding-top: calc(2.5% + 50px); } }
-  /* line 424, site.css.scss */
+  /* line 430, site.css.scss */
   #main #quick-stats ::before {
     content: "";
     display: table; }
-  /* line 428, site.css.scss */
+  /* line 434, site.css.scss */
   #main #quick-stats .view-toggle {
     display: inline-block;
     float: left;
     clear: both; }
-  /* line 434, site.css.scss */
+  /* line 440, site.css.scss */
   #main #quick-stats .player-stats-summary-small {
     display: none; }
   @media (min-width: 811px) {
-    /* line 439, site.css.scss */
+    /* line 445, site.css.scss */
     #main #quick-stats .full-name {
       font-weight: bold; }
-      /* line 441, site.css.scss */
+      /* line 447, site.css.scss */
       #main #quick-stats .full-name span {
         display: none; } }
-  /* line 447, site.css.scss */
+  /* line 453, site.css.scss */
   #main #quick-stats .player-bio {
     float: left;
     width: 30%;
     padding-right: 2.5%; }
     @media (max-width: 810px) {
-      /* line 447, site.css.scss */
+      /* line 453, site.css.scss */
       #main #quick-stats .player-bio {
         width: 100%; } }
-    /* line 454, site.css.scss */
+    /* line 460, site.css.scss */
     #main #quick-stats .player-bio h3 {
       display: none; }
       @media (max-width: 810px) {
-        /* line 454, site.css.scss */
+        /* line 460, site.css.scss */
         #main #quick-stats .player-bio h3 {
           display: block; } }
-    /* line 460, site.css.scss */
+    /* line 466, site.css.scss */
     #main #quick-stats .player-bio li {
       font-family: helvetica,arial,sans-serif;
       font-size: .875em;
       margin-bottom: .25em; }
-    /* line 467, site.css.scss */
+    /* line 473, site.css.scss */
     #main #quick-stats .player-bio .twitter-buttons li:first-child {
       margin-right: 2.5%; }
-    /* line 470, site.css.scss */
+    /* line 476, site.css.scss */
     #main #quick-stats .player-bio .twitter-buttons li {
       float: left; }
-  /* line 476, site.css.scss */
+  /* line 482, site.css.scss */
   #main #quick-stats .player-stats-summary-large {
     width: 70%;
     float: left; }
     @media (max-width: 810px) {
-      /* line 476, site.css.scss */
+      /* line 482, site.css.scss */
       #main #quick-stats .player-stats-summary-large {
         display: none; } }
-    /* line 484, site.css.scss */
+    /* line 490, site.css.scss */
     #main #quick-stats .player-stats-summary-large table {
       font-size: .8em;
       border: 1px solid #d2d2d2;
       width: 100%;
       margin-bottom: .75em; }
-      /* line 489, site.css.scss */
+      /* line 495, site.css.scss */
       #main #quick-stats .player-stats-summary-large table tr {
         border-bottom: 1px solid #e9e9e9;
         height: 31px; }
-      /* line 495, site.css.scss */
+      /* line 501, site.css.scss */
       #main #quick-stats .player-stats-summary-large table thead tr {
         border-bottom: 1px solid #d2d2d2; }
-      /* line 500, site.css.scss */
+      /* line 506, site.css.scss */
       #main #quick-stats .player-stats-summary-large table td, #main #quick-stats .player-stats-summary-large table th {
         padding: 6px;
         font-family: droid-sans-mono,courier;
         text-align: right; }
-      /* line 506, site.css.scss */
+      /* line 512, site.css.scss */
       #main #quick-stats .player-stats-summary-large table td:first-child {
         background-color: #f6f6f6;
         border-right: 1px solid #e9e9e9;
         font-family: helvetica,arial,sans-serif;
         text-align: left; }
-      /* line 512, site.css.scss */
+      /* line 518, site.css.scss */
       #main #quick-stats .player-stats-summary-large table th {
         background-color: #e3e3e3;
         font-weight: normal;
         font-family: helvetica,arial,sans-serif; }
-      /* line 517, site.css.scss */
+      /* line 523, site.css.scss */
       #main #quick-stats .player-stats-summary-large table th:first-child {
         border-right: 1px solid #ddd;
         text-align: left; }
-  /* line 527, site.css.scss */
+  /* line 533, site.css.scss */
   #main #quick-stats:after {
     content: " ";
     display: table;
     clear: both; }
-  /* line 533, site.css.scss */
+  /* line 539, site.css.scss */
   #main #quick-stats:before {
     content: "";
     display: table; }
-  /* line 539, site.css.scss */
+  /* line 545, site.css.scss */
   #main div.responsive-table {
     position: relative;
     margin-bottom: 0;
     width: 100%;
     padding-bottom: 20px; }
     @media (max-width: 780px) {
-      /* line 544, site.css.scss */
+      /* line 550, site.css.scss */
       #main div.responsive-table div.scrollable {
         overflow-x: scroll; } }
-  /* line 552, site.css.scss */
+  /* line 558, site.css.scss */
   #main .responsive-table table {
     font-size: .8em;
     border: 1px solid #d2d2d2; }
-    /* line 556, site.css.scss */
+    /* line 562, site.css.scss */
     #main .responsive-table table th, #main .responsive-table table td {
       padding: 6px;
       font-family: droid-sans-mono,courier;
       text-align: right; }
-    /* line 562, site.css.scss */
+    /* line 568, site.css.scss */
     #main .responsive-table table td {
       white-space: nowrap; }
-    /* line 566, site.css.scss */
+    /* line 572, site.css.scss */
     #main .responsive-table table th {
       background-color: #e3e3e3;
       font-weight: normal;
       font-family: helvetica,arial,sans-serif;
       text-align: left; }
-    /* line 573, site.css.scss */
+    /* line 579, site.css.scss */
     #main .responsive-table table td:first-child {
       background-color: #f6f6f6;
       border-right: 1px solid #e9e9e9;
       font-family: helvetica,arial,sans-serif;
       text-align: left; }
-    /* line 581, site.css.scss */
+    /* line 587, site.css.scss */
     #main .responsive-table table tr {
       border-bottom: 1px solid #e9e9e9;
       height: 31px; }
-      /* line 585, site.css.scss */
+      /* line 591, site.css.scss */
       #main .responsive-table table tr td {
         text-align: left; }
-      /* line 589, site.css.scss */
+      /* line 595, site.css.scss */
       #main .responsive-table table tr td:last-child {
         text-align: right; }
-      /* line 593, site.css.scss */
+      /* line 599, site.css.scss */
       #main .responsive-table table tr td:first-child {
         background-color: #f6f6f6;
         border-right: 1px solid #e9e9e9;
         text-align: left; }
-    /* line 600, site.css.scss */
+    /* line 606, site.css.scss */
     #main .responsive-table table th:first-child {
       border-right: 1px solid #ddd;
       text-align: left; }
-    /* line 606, site.css.scss */
+    /* line 612, site.css.scss */
     #main .responsive-table table thead tr {
       border-bottom: 1px solid #d2d2d2; }
-    /* line 609, site.css.scss */
+    /* line 615, site.css.scss */
     #main .responsive-table table thead th:first-child {
       border-right: 1px solid #ddd; }
-    /* line 613, site.css.scss */
+    /* line 619, site.css.scss */
     #main .responsive-table table thead th:last-child {
       text-align: right; }
-    /* line 618, site.css.scss */
+    /* line 624, site.css.scss */
     #main .responsive-table table tbody {
       display: table-row-group;
       vertical-align: middle;
       border-color: inherit; }
-    /* line 624, site.css.scss */
+    /* line 630, site.css.scss */
     #main .responsive-table table tfoot > tr {
       background-color: #f1f1f1; }
-    /* line 628, site.css.scss */
+    /* line 634, site.css.scss */
     #main .responsive-table table .footer {
       color: #333; }
-  /* line 635, site.css.scss */
+  /* line 641, site.css.scss */
   #main #stats {
     overflow: hidden; }
-    /* line 638, site.css.scss */
+    /* line 644, site.css.scss */
     #main #stats .stat-panel {
       padding-bottom: 1.5em; }
-  /* line 644, site.css.scss */
+  /* line 650, site.css.scss */
   #main #stats-nav {
     text-align: center;
     padding-bottom: 1.5em; }
-    /* line 649, site.css.scss */
+    /* line 655, site.css.scss */
     #main #stats-nav .tab-set.tabs-4 {
       display: inline-block; }
-      /* line 651, site.css.scss */
+      /* line 657, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li {
         border: 1px solid #ccc;
         border-left: none;
@@ -903,72 +908,72 @@ table {
         float: left;
         padding: 10px 20px;
         cursor: pointer; }
-      /* line 663, site.css.scss */
+      /* line 669, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li.active, #main #stats-nav .tab-set.tabs-4 li:hover {
         background-color: #e3e3e3; }
-      /* line 667, site.css.scss */
+      /* line 673, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li:first-child {
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         border-left: 1px solid #ccc; }
-      /* line 674, site.css.scss */
+      /* line 680, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li:last-child {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border-left: none; }
       @media (max-width: 580px) {
-        /* line 680, site.css.scss */
+        /* line 686, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li {
           width: 50%;
           margin: 0;
           padding: 10px 0;
           border: 1px solid #ccc; }
-        /* line 686, site.css.scss */
+        /* line 692, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:first-child {
           border-top-left-radius: 3px;
           border-bottom-left-radius: 0; }
-        /* line 691, site.css.scss */
+        /* line 697, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:nth-child(2) {
           border-top-right-radius: 3px;
           margin-left: -1px; }
-        /* line 696, site.css.scss */
+        /* line 702, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:nth-child(3) {
           border-bottom-left-radius: 3px;
           margin-top: -1px; }
-        /* line 700, site.css.scss */
+        /* line 706, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:last-child {
           border-bottom-right-radius: 3px;
           border-top-right-radius: 0;
           margin: -1px; } }
-    /* line 708, site.css.scss */
+    /* line 714, site.css.scss */
     #main #stats-nav .tab-set:after {
       content: "";
       display: table;
       clear: both; }
-  /* line 716, site.css.scss */
+  /* line 722, site.css.scss */
   #main #stats-nav .tab-set:before {
     content: "";
     display: table; }
-  /* line 721, site.css.scss */
+  /* line 727, site.css.scss */
   #main #global-footer-container {
     font: 12px arial,helvetica,sans-serif;
     background: #000;
     overflow: hidden;
     height: 200px;
     width: 100%; }
-  /* line 729, site.css.scss */
+  /* line 735, site.css.scss */
   #main #careerStats {
     margin-botton: 1.5em; }
-    /* line 732, site.css.scss */
+    /* line 738, site.css.scss */
     #main #careerStats .title-summary {
       margin-bottom: 0.5em; }
-    /* line 736, site.css.scss */
+    /* line 742, site.css.scss */
     #main #careerStats .table-summary {
       margin: 10px 10px 30px 10px;
       padding: 0 10px 0 10px;
       font-family: helvetica,arial,sans-serif;
       font-size: .875em; }
-      /* line 742, site.css.scss */
+      /* line 748, site.css.scss */
       #main #careerStats .table-summary li {
         list-style: square;
         padding-bottom: 5px; }
