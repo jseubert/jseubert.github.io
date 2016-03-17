@@ -409,57 +409,65 @@ table {
     font-family: mlb_primary,helvetica,arial,sans-serif;
     font-size: 1.125em;
     letter-spacing: .025em;
-    margin: 0 0 1em 0; }
-  /* line 82, site.css.scss */
+    margin: 0 0 0 0;
+    padding-bottom: 1em; }
+  /* line 83, site.css.scss */
+  #main h4 {
+    background: none;
+    font-family: mlb_primary,helvetica,arial,sans-serif;
+    font-size: 1em;
+    margin: 0 0 4px 0;
+    color: #444; }
+  /* line 91, site.css.scss */
   #main ul {
     margin: 0;
     padding: 0; }
-  /* line 87, site.css.scss */
+  /* line 96, site.css.scss */
   #main li {
     list-style: none; }
-  /* line 91, site.css.scss */
+  /* line 100, site.css.scss */
   #main table {
     border-collapse: collapse;
     border-spacing: 0; }
-  /* line 96, site.css.scss */
+  /* line 105, site.css.scss */
   #main thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit; }
-  /* line 102, site.css.scss */
+  /* line 111, site.css.scss */
   #main tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit; }
-  /* line 108, site.css.scss */
+  /* line 117, site.css.scss */
   #main tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit; }
-  /* line 114, site.css.scss */
+  /* line 123, site.css.scss */
   #main td, #main th {
     padding: 0; }
-  /* line 118, site.css.scss */
+  /* line 127, site.css.scss */
   #main tfoot {
     display: table-footer-group;
     vertical-align: middle;
     border-color: inherit; }
-  /* line 124, site.css.scss */
+  /* line 133, site.css.scss */
   #main .divider {
     border-top: 1px solid #ccc;
     height: 33px;
     margin-top: -33px;
     width: 100%; }
-  /* line 131, site.css.scss */
+  /* line 140, site.css.scss */
   #main .scrollable {
     position: relative; }
-    /* line 133, site.css.scss */
+    /* line 142, site.css.scss */
     #main .scrollable table {
       width: 100%; }
-  /* line 138, site.css.scss */
+  /* line 147, site.css.scss */
   #main .label {
     font-weight: bold; }
-  /* line 142, site.css.scss */
+  /* line 151, site.css.scss */
   #main .container {
     margin: auto;
     max-width: 1276px !important;
@@ -467,13 +475,13 @@ table {
     background-color: #fff;
     padding: 0 30px; }
     @media (max-width: 1276px) {
-      /* line 142, site.css.scss */
+      /* line 151, site.css.scss */
       #main .container {
         padding: 0 2.5%; } }
-  /* line 153, site.css.scss */
+  /* line 162, site.css.scss */
   #main .container > section {
     padding-bottom: 1.5em; }
-  /* line 157, site.css.scss */
+  /* line 166, site.css.scss */
   #main #player-nav {
     font-family: mlb_primary,Arial,Helvetica,Sans-Serif;
     bottom: -65px;
@@ -484,25 +492,25 @@ table {
     z-index: 1;
     display: block; }
     @media (max-width: 990px) {
-      /* line 169, site.css.scss */
+      /* line 178, site.css.scss */
       #main #player-nav nav div {
         width: 100%;
         float: none; } }
-    /* line 175, site.css.scss */
+    /* line 184, site.css.scss */
     #main #player-nav > .container {
       background: url("../images/nav-bg.gif") !important;
       background-color: #fff;
       height: 100%; }
     @media (max-width: 529px) {
-      /* line 157, site.css.scss */
+      /* line 166, site.css.scss */
       #main #player-nav {
         height: 50px;
         bottom: -50px; } }
     @media (max-width: 400px) {
-      /* line 188, site.css.scss */
+      /* line 197, site.css.scss */
       #main #player-nav .container {
         padding: 0 4px; } }
-    /* line 193, site.css.scss */
+    /* line 202, site.css.scss */
     #main #player-nav .player-vitals-mini {
       float: left;
       left: 0;
@@ -511,43 +519,43 @@ table {
       transition: .4s top;
       width: 400px; }
       @media (max-width: 990px) {
-        /* line 193, site.css.scss */
+        /* line 202, site.css.scss */
         #main #player-nav .player-vitals-mini {
           display: none; } }
-      /* line 205, site.css.scss */
+      /* line 214, site.css.scss */
       #main #player-nav .player-vitals-mini img {
         float: left;
         height: 32px;
         margin: 17px 10px;
         vertical-align: middle; }
-      /* line 212, site.css.scss */
+      /* line 221, site.css.scss */
       #main #player-nav .player-vitals-mini .player-vitals-mini-name {
         color: #333;
         font-size: 1.3em;
         margin-top: 8px; }
         @media (min-width: 1200px) {
-          /* line 212, site.css.scss */
+          /* line 221, site.css.scss */
           #main #player-nav .player-vitals-mini .player-vitals-mini-name {
             margin-top: 4px; } }
-      /* line 221, site.css.scss */
+      /* line 230, site.css.scss */
       #main #player-nav .player-vitals-mini .player-vitals-mini-number {
         border-right: 1px solid #555;
         margin-right: 8px;
         padding-right: 8px; }
-      /* line 226, site.css.scss */
+      /* line 235, site.css.scss */
       #main #player-nav .player-vitals-mini span {
         color: #555; }
-    /* line 231, site.css.scss */
+    /* line 240, site.css.scss */
     #main #player-nav .player-nav-items {
       float: right; }
       @media (max-width: 990px) {
-        /* line 231, site.css.scss */
+        /* line 240, site.css.scss */
         #main #player-nav .player-nav-items {
           display: -webkit-flex;
           display: flex;
           float: none;
           width: 100%; } }
-      /* line 241, site.css.scss */
+      /* line 250, site.css.scss */
       #main #player-nav .player-nav-items a {
         text-shadow: 0 1px #fff;
         display: block;
@@ -563,27 +571,27 @@ table {
         text-align: center;
         vertical-align: middle; }
         @media (max-width: 990px) {
-          /* line 241, site.css.scss */
+          /* line 250, site.css.scss */
           #main #player-nav .player-nav-items a {
             -webkit-flex: auto;
             flex: auto;
             padding: 0; } }
         @media (max-width: 529px) {
-          /* line 241, site.css.scss */
+          /* line 250, site.css.scss */
           #main #player-nav .player-nav-items a {
             line-height: 50px;
             font-size: 1em;
             height: 50px; } }
         @media (max-width: 400px) {
-          /* line 241, site.css.scss */
+          /* line 250, site.css.scss */
           #main #player-nav .player-nav-items a {
             font-size: .8em; } }
-      /* line 273, site.css.scss */
+      /* line 282, site.css.scss */
       #main #player-nav .player-nav-items a.active, #main #player-nav .player-nav-items a:hover {
         color: #333;
         border-width: 0 0 3px;
         border-color: inherit; }
-  /* line 282, site.css.scss */
+  /* line 291, site.css.scss */
   #main #player-header {
     background-image: url("../images/outfield.jpg");
     position: relative;
@@ -593,14 +601,14 @@ table {
     max-width: 1500px;
     margin: auto; }
     @media (min-width: 991px) {
-      /* line 282, site.css.scss */
+      /* line 291, site.css.scss */
       #main #player-header {
         margin: 0 auto 65px auto; } }
     @media (max-width: 1280px) {
-      /* line 282, site.css.scss */
+      /* line 291, site.css.scss */
       #main #player-header {
         box-shadow: 0 -30px 50px 0 #000 inset; } }
-    /* line 299, site.css.scss */
+    /* line 308, site.css.scss */
     #main #player-header .player-headshot {
       position: absolute;
       bottom: -76px;
@@ -614,29 +622,29 @@ table {
       transition: .3s bottom;
       vertical-align: middle; }
       @media (max-width: 990px) {
-        /* line 299, site.css.scss */
+        /* line 308, site.css.scss */
         #main #player-header .player-headshot {
           border: 4px solid #fff;
           bottom: 16px;
           left: 2.5%;
           padding: 0;
           width: 20%; } }
-    /* line 321, site.css.scss */
+    /* line 330, site.css.scss */
     #main #player-header > .container {
       position: relative;
       background-color: transparent !important;
       padding-top: 33.3%; }
-    /* line 327, site.css.scss */
+    /* line 336, site.css.scss */
     #main #player-header .player-vitals {
       position: absolute;
       bottom: 16px;
       text-shadow: 1px 1px 11px #000;
       left: 252px;
       z-index: 1; }
-      /* line 334, site.css.scss */
+      /* line 343, site.css.scss */
       #main #player-header .player-vitals h1 {
         margin-bottom: .1em; }
-      /* line 338, site.css.scss */
+      /* line 347, site.css.scss */
       #main #player-header .player-vitals li {
         float: left;
         list-style-type: none;
@@ -647,259 +655,259 @@ table {
         padding-right: 10px;
         border-right: 1px solid #fff; }
       @media (max-width: 990px) {
-        /* line 327, site.css.scss */
+        /* line 336, site.css.scss */
         #main #player-header .player-vitals {
           left: 2.5%;
           margin-left: 22.5%;
           bottom: 16px; } }
       @media (max-width: 600px) {
-        /* line 327, site.css.scss */
+        /* line 336, site.css.scss */
         #main #player-header .player-vitals {
           bottom: 8px;
           left: 16px;
           margin-left: 22.5%; }
-          /* line 356, site.css.scss */
+          /* line 365, site.css.scss */
           #main #player-header .player-vitals h1 {
             font-size: 1.5em; }
-          /* line 359, site.css.scss */
+          /* line 368, site.css.scss */
           #main #player-header .player-vitals li {
             font-size: .75em; } }
       @media (max-width: 379px) {
-        /* line 370, site.css.scss */
+        /* line 379, site.css.scss */
         #main #player-header .player-vitals h1 {
           font-size: 1.25em; }
-        /* line 374, site.css.scss */
+        /* line 383, site.css.scss */
         #main #player-header .player-vitals li {
           margin-right: 6px;
           padding-right: 6px; } }
-    /* line 381, site.css.scss */
+    /* line 390, site.css.scss */
     #main #player-header .mlbpa-logo {
       bottom: 16px;
       position: absolute;
       right: 16px; }
       @media (max-width: 600px) {
-        /* line 381, site.css.scss */
+        /* line 390, site.css.scss */
         #main #player-header .mlbpa-logo {
           bottom: 8px;
           right: 8px;
           width: 30px; } }
-  /* line 394, site.css.scss */
+  /* line 403, site.css.scss */
   #main #player-header.sticky-nav-enabled {
     max-width: 100%;
     max-height: 500px; }
     @media (min-width: 991px) {
-      /* line 399, site.css.scss */
+      /* line 408, site.css.scss */
       #main #player-header.sticky-nav-enabled .player-headshot {
         bottom: 76px;
         opacity: 0; } }
-    /* line 404, site.css.scss */
+    /* line 413, site.css.scss */
     #main #player-header.sticky-nav-enabled #player-nav {
       background-image: url("../images/nav-bg.gif") !important;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
       position: fixed;
       -webkit-transform: translateZ(0);
       top: 0; }
-      /* line 410, site.css.scss */
+      /* line 419, site.css.scss */
       #main #player-header.sticky-nav-enabled #player-nav .player-vitals-mini {
         top: 0; }
-    /* line 414, site.css.scss */
+    /* line 423, site.css.scss */
     #main #player-header.sticky-nav-enabled .player-vitals {
       display: none; }
-  /* line 419, site.css.scss */
+  /* line 428, site.css.scss */
   #main #summary .container {
     padding-top: 30px; }
     @media (max-width: 990px) {
-      /* line 419, site.css.scss */
+      /* line 428, site.css.scss */
       #main #summary .container {
         padding-top: calc(2.5% + 65px); } }
     @media (max-width: 529px) {
-      /* line 419, site.css.scss */
+      /* line 428, site.css.scss */
       #main #summary .container {
         padding-top: calc(2.5% + 50px); } }
-  /* line 430, site.css.scss */
+  /* line 439, site.css.scss */
   #main #quick-stats ::before {
     content: "";
     display: table; }
-  /* line 434, site.css.scss */
+  /* line 443, site.css.scss */
   #main #quick-stats .view-toggle {
     display: inline-block;
     float: left;
     clear: both; }
-  /* line 440, site.css.scss */
+  /* line 449, site.css.scss */
   #main #quick-stats .player-stats-summary-small {
     display: none; }
   @media (min-width: 811px) {
-    /* line 445, site.css.scss */
+    /* line 454, site.css.scss */
     #main #quick-stats .full-name {
       font-weight: bold; }
-      /* line 447, site.css.scss */
+      /* line 456, site.css.scss */
       #main #quick-stats .full-name span {
         display: none; } }
-  /* line 453, site.css.scss */
+  /* line 462, site.css.scss */
   #main #quick-stats .player-bio {
     float: left;
     width: 40%;
     padding-right: 2.5%; }
     @media (max-width: 810px) {
-      /* line 453, site.css.scss */
+      /* line 462, site.css.scss */
       #main #quick-stats .player-bio {
         width: 100%; } }
-    /* line 460, site.css.scss */
+    /* line 469, site.css.scss */
     #main #quick-stats .player-bio h3 {
       display: none; }
       @media (max-width: 810px) {
-        /* line 460, site.css.scss */
+        /* line 469, site.css.scss */
         #main #quick-stats .player-bio h3 {
           display: block; } }
-    /* line 466, site.css.scss */
+    /* line 475, site.css.scss */
     #main #quick-stats .player-bio li {
       font-family: helvetica,arial,sans-serif;
       font-size: .875em;
       margin-bottom: .25em; }
-    /* line 473, site.css.scss */
+    /* line 482, site.css.scss */
     #main #quick-stats .player-bio .twitter-buttons li:first-child {
       margin-right: 2.5%; }
-    /* line 476, site.css.scss */
+    /* line 485, site.css.scss */
     #main #quick-stats .player-bio .twitter-buttons li {
       float: left; }
-  /* line 482, site.css.scss */
+  /* line 491, site.css.scss */
   #main #quick-stats .player-stats-summary-large {
     width: 60%;
     float: right; }
     @media (max-width: 810px) {
-      /* line 482, site.css.scss */
+      /* line 491, site.css.scss */
       #main #quick-stats .player-stats-summary-large {
         width: 100%;
         margin-top: 15px; } }
-    /* line 491, site.css.scss */
+    /* line 500, site.css.scss */
     #main #quick-stats .player-stats-summary-large table {
       font-size: .8em;
       border: 1px solid #d2d2d2;
       width: 100%;
       margin-bottom: .75em; }
-      /* line 496, site.css.scss */
+      /* line 505, site.css.scss */
       #main #quick-stats .player-stats-summary-large table tr {
         border-bottom: 1px solid #e9e9e9;
         height: 31px; }
-      /* line 502, site.css.scss */
+      /* line 511, site.css.scss */
       #main #quick-stats .player-stats-summary-large table thead tr {
         border-bottom: 1px solid #d2d2d2; }
-      /* line 507, site.css.scss */
+      /* line 516, site.css.scss */
       #main #quick-stats .player-stats-summary-large table td, #main #quick-stats .player-stats-summary-large table th {
         padding: 6px;
         font-family: droid-sans-mono,courier;
         text-align: right; }
-      /* line 513, site.css.scss */
+      /* line 522, site.css.scss */
       #main #quick-stats .player-stats-summary-large table td:first-child {
         background-color: #f6f6f6;
         border-right: 1px solid #e9e9e9;
         font-family: helvetica,arial,sans-serif;
         text-align: left; }
-      /* line 519, site.css.scss */
+      /* line 528, site.css.scss */
       #main #quick-stats .player-stats-summary-large table th {
         background-color: #e3e3e3;
         font-weight: normal;
         font-family: helvetica,arial,sans-serif; }
-      /* line 524, site.css.scss */
+      /* line 533, site.css.scss */
       #main #quick-stats .player-stats-summary-large table th:first-child {
         border-right: 1px solid #ddd;
         text-align: left; }
-  /* line 534, site.css.scss */
+  /* line 543, site.css.scss */
   #main #quick-stats:after {
     content: " ";
     display: table;
     clear: both; }
-  /* line 540, site.css.scss */
+  /* line 549, site.css.scss */
   #main #quick-stats:before {
     content: "";
     display: table; }
-  /* line 546, site.css.scss */
+  /* line 555, site.css.scss */
   #main div.responsive-table {
     position: relative;
     margin-bottom: 0;
     width: 100%;
     padding-bottom: 30px; }
     @media (max-width: 780px) {
-      /* line 551, site.css.scss */
+      /* line 560, site.css.scss */
       #main div.responsive-table div.scrollable {
         overflow-x: scroll; } }
-  /* line 559, site.css.scss */
+  /* line 568, site.css.scss */
   #main .responsive-table table {
     font-size: .8em;
     border: 1px solid #d2d2d2; }
-    /* line 563, site.css.scss */
+    /* line 572, site.css.scss */
     #main .responsive-table table th, #main .responsive-table table td {
       padding: 6px;
       font-family: droid-sans-mono,courier;
       text-align: right; }
-    /* line 569, site.css.scss */
+    /* line 578, site.css.scss */
     #main .responsive-table table td {
       white-space: nowrap; }
-    /* line 573, site.css.scss */
+    /* line 582, site.css.scss */
     #main .responsive-table table th {
       background-color: #e3e3e3;
       font-weight: normal;
       font-family: helvetica,arial,sans-serif;
       text-align: left; }
-    /* line 580, site.css.scss */
+    /* line 589, site.css.scss */
     #main .responsive-table table td:first-child {
       background-color: #f6f6f6;
       border-right: 1px solid #e9e9e9;
       font-family: helvetica,arial,sans-serif;
       text-align: left; }
-    /* line 588, site.css.scss */
+    /* line 597, site.css.scss */
     #main .responsive-table table tr {
       border-bottom: 1px solid #e9e9e9;
       height: 31px; }
-      /* line 592, site.css.scss */
+      /* line 601, site.css.scss */
       #main .responsive-table table tr td {
         text-align: left; }
-      /* line 596, site.css.scss */
+      /* line 605, site.css.scss */
       #main .responsive-table table tr td:last-child {
         text-align: right; }
-      /* line 600, site.css.scss */
+      /* line 609, site.css.scss */
       #main .responsive-table table tr td:first-child {
         background-color: #f6f6f6;
         border-right: 1px solid #e9e9e9;
         text-align: left; }
-    /* line 607, site.css.scss */
+    /* line 616, site.css.scss */
     #main .responsive-table table th:first-child {
       border-right: 1px solid #ddd;
       text-align: left; }
-    /* line 613, site.css.scss */
+    /* line 622, site.css.scss */
     #main .responsive-table table thead tr {
       border-bottom: 1px solid #d2d2d2; }
-    /* line 616, site.css.scss */
+    /* line 625, site.css.scss */
     #main .responsive-table table thead th:first-child {
       border-right: 1px solid #ddd; }
-    /* line 620, site.css.scss */
+    /* line 629, site.css.scss */
     #main .responsive-table table thead th:last-child {
       text-align: right; }
-    /* line 625, site.css.scss */
+    /* line 634, site.css.scss */
     #main .responsive-table table tbody {
       display: table-row-group;
       vertical-align: middle;
       border-color: inherit; }
-    /* line 631, site.css.scss */
+    /* line 640, site.css.scss */
     #main .responsive-table table tfoot > tr {
       background-color: #f1f1f1; }
-    /* line 635, site.css.scss */
+    /* line 644, site.css.scss */
     #main .responsive-table table .footer {
       color: #333; }
-  /* line 642, site.css.scss */
+  /* line 651, site.css.scss */
   #main #stats {
     overflow: hidden; }
-    /* line 645, site.css.scss */
+    /* line 654, site.css.scss */
     #main #stats .stat-panel {
       padding-bottom: 1.5em; }
-  /* line 651, site.css.scss */
+  /* line 660, site.css.scss */
   #main #stats-nav {
     text-align: center;
     padding-bottom: 1.5em; }
-    /* line 656, site.css.scss */
+    /* line 665, site.css.scss */
     #main #stats-nav .tab-set.tabs-4 {
       display: inline-block; }
-      /* line 658, site.css.scss */
+      /* line 667, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li {
         border: 1px solid #ccc;
         border-left: none;
@@ -909,78 +917,123 @@ table {
         float: left;
         padding: 10px 20px;
         cursor: pointer; }
-      /* line 670, site.css.scss */
+      /* line 679, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li.active, #main #stats-nav .tab-set.tabs-4 li:hover {
         background-color: #e3e3e3; }
-      /* line 674, site.css.scss */
+      /* line 683, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li:first-child {
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         border-left: 1px solid #ccc; }
-      /* line 681, site.css.scss */
+      /* line 690, site.css.scss */
       #main #stats-nav .tab-set.tabs-4 li:last-child {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border-left: none; }
       @media (max-width: 580px) {
-        /* line 687, site.css.scss */
+        /* line 696, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li {
           width: 50%;
           margin: 0;
           padding: 10px 0;
           border: 1px solid #ccc; }
-        /* line 693, site.css.scss */
+        /* line 702, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:first-child {
           border-top-left-radius: 3px;
           border-bottom-left-radius: 0; }
-        /* line 698, site.css.scss */
+        /* line 707, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:nth-child(2) {
           border-top-right-radius: 3px;
           margin-left: -1px; }
-        /* line 703, site.css.scss */
+        /* line 712, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:nth-child(3) {
           border-bottom-left-radius: 3px;
           margin-top: -1px; }
-        /* line 707, site.css.scss */
+        /* line 716, site.css.scss */
         #main #stats-nav .tab-set.tabs-4 li:last-child {
           border-bottom-right-radius: 3px;
           border-top-right-radius: 0;
           margin: -1px; } }
-    /* line 715, site.css.scss */
+    /* line 724, site.css.scss */
     #main #stats-nav .tab-set:after {
       content: "";
       display: table;
       clear: both; }
-  /* line 723, site.css.scss */
+  /* line 732, site.css.scss */
   #main #stats-nav .tab-set:before {
     content: "";
     display: table; }
-  /* line 728, site.css.scss */
+  /* line 737, site.css.scss */
   #main #global-footer-container {
     font: 12px arial,helvetica,sans-serif;
     background: #000;
     overflow: hidden;
     height: 200px;
     width: 100%; }
-  /* line 736, site.css.scss */
+  /* line 745, site.css.scss */
   #main .table-details {
     margin-botton: 1.5em; }
-    /* line 739, site.css.scss */
+    /* line 748, site.css.scss */
     #main .table-details .title-summary {
       margin-bottom: 0.5em; }
-    /* line 743, site.css.scss */
+    /* line 752, site.css.scss */
     #main .table-details .table-summary {
       margin: 10px 10px 10px 10px;
       padding: 0 10px 0 10px;
       font-family: helvetica,arial,sans-serif;
       font-size: .875em; }
-      /* line 749, site.css.scss */
+      /* line 758, site.css.scss */
       #main .table-details .table-summary li {
         list-style: square;
         padding-bottom: 5px; }
-      /* line 753, site.css.scss */
+      /* line 762, site.css.scss */
       #main .table-details .table-summary ul {
         padding-left: 20px; }
-        /* line 755, site.css.scss */
+        /* line 764, site.css.scss */
         #main .table-details .table-summary ul li {
           list-style: none; }
+  /* line 773, site.css.scss */
+  #main #news h3 {
+    padding-bottom: 0; }
+  /* line 780, site.css.scss */
+  #main #apps #apps-section .apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .75em; }
+    /* line 785, site.css.scss */
+    #main #apps #apps-section .apps-container .app-item {
+      flex: 0 0 33.3%;
+      border: 1px solid #d2d2d2;
+      padding: .75em;
+      margin: -1px -1px 0 0; }
+      @media (max-width: 990px) {
+        /* line 785, site.css.scss */
+        #main #apps #apps-section .apps-container .app-item {
+          flex: 0 0 50%; } }
+      @media (max-width: 600px) {
+        /* line 785, site.css.scss */
+        #main #apps #apps-section .apps-container .app-item {
+          flex: 0 0 100%; } }
+      /* line 797, site.css.scss */
+      #main #apps #apps-section .apps-container .app-item .app-icon {
+        width: 25%;
+        margin: auto;
+        padding-top: 20px; }
+        /* line 801, site.css.scss */
+        #main #apps #apps-section .apps-container .app-item .app-icon img {
+          width: 100%; }
+      /* line 806, site.css.scss */
+      #main #apps #apps-section .apps-container .app-item h4 {
+        margin-top: 10px;
+        border-bottom: 2px solid #e3e3e3;
+        padding-bottom: 5px;
+        text-align: center; }
+      /* line 812, site.css.scss */
+      #main #apps #apps-section .apps-container .app-item p {
+        font-family: helvetica,arial,sans-serif;
+        font-size: .875em;
+        margin-left: 20px;
+        margin-right: 20px; }
+  /* line 823, site.css.scss */
+  #main table {
+    width: 100%; }
