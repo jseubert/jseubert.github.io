@@ -1,23 +1,4 @@
 // This is where it all goes :)
-/*
-$(function() {
-    //caches a jQuery object containing the header element
-    var header = $(".clearHeader");
-    $(window).scroll(function() {
-
-
-
-        var scroll = $(window).scrollTop();
-    alert("Hello! I am an alert box!!");
-        if (scroll >= 200) {
-          alert("Hello! I am an alert box!!");
-            $(".player-header").addClass("sticky-nav-enabled");
-        } else {
-          alert("Hello! I am an alert box!!");
-            $(".player-header").removeClass("sticky-nav-enabled");
-        }
-});*/
-
 function workingMonths() {
     var months = new Date().getMonth() + 3;
     return "2 years, " + months + " months";
@@ -26,6 +7,7 @@ function workingMonths() {
 $(document).ready(function () {
   var playerHeader = $("#player-header");
   var scroll = $(window).scrollTop();
+  var activeElement = "#summary-nav-item";
   //console.log(scroll + " " + playerHeader.height());
   if (scroll >= (playerHeader.height() )) {
       playerHeader.addClass("sticky-nav-enabled");
@@ -35,7 +17,6 @@ $(document).ready(function () {
 
   //Detect scroll to hide/show nav bar
   window.onscroll = function (e) {
-  // called when the window is scrolled.
     var scroll = $(window).scrollTop();
   //  console.log(scroll + " " + playerHeader.height());
     if (scroll >= (playerHeader.height() )) {
@@ -44,9 +25,29 @@ $(document).ready(function () {
         playerHeader.removeClass("sticky-nav-enabled");
     }
 
+    var newActiveElement;
     //figure out which row to highlight
-    if(scroll <= $("#stats")) {
-      
+    if(scroll <= $("#stats").offset().top - $("#player-nav").height() - 1) {
+      console.log("#summary-nav-item");
+      newActiveElement = "#summary-nav-item";
+    } else if(scroll <= $("#news").offset().top - $("#player-nav").height() - 1) {
+      console.log("#stats-nav-item");
+      newActiveElement = "#stats-nav-item";
+    } else if(scroll <= $("#apps").offset().top - $("#player-nav").height() - 1) {
+      console.log("#news-nav-item");
+      newActiveElement = "#news-nav-item";
+    } else {
+      console.log("#apps-nav-item");
+      newActiveElement = "#apps-nav-item";
+    }
+
+    //Make sure whatever section is 0
+    if(newActiveElement != activeElement) {
+      $("a", ".player-nav-items")
+      .removeClass("active")
+      .filter(newActiveElement)
+      .addClass("active");
+      activeElement = newActiveElement;
     }
   }
 
@@ -54,7 +55,8 @@ $(document).ready(function () {
   $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - $("#player-nav").height()
-    }, 500);
+    }, 200);
+    console.log("Clicked");
     return false;
   });
 
@@ -82,5 +84,5 @@ $(document).ready(function () {
         $("#scoutingPanel").show();
       }
 
-  })
+  });
 });
