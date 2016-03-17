@@ -552,7 +552,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
         overflow-x: scroll;
       }
     }
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .responsive-table {
@@ -733,7 +733,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       width: 100%;
   }
 
-  #careerStats {
+  .table-details {
     margin-botton:1.5em;
 
     .title-summary {
@@ -741,7 +741,7 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
     }
 
     .table-summary {
-      margin: 10px 10px 30px 10px;
+      margin: 10px 10px 10px 10px;
       padding: 0 10px 0 10px;
       font-family: helvetica,arial,sans-serif;
       font-size: .875em;
@@ -749,6 +749,12 @@ url("http://ui.bamstatic.com/clubs/mlb/fonts/benton_sans_cond_medium/6ec61f10-00
       li {
         list-style: square;
         padding-bottom: 5px;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          list-style: none;
+        }
       }
     }
 
